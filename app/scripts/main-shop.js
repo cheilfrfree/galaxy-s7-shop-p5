@@ -9674,7 +9674,8 @@ var _gsScope = "undefined" != typeof module && module.exports && "undefined" != 
                         for (o.global || (o = Ge(o.source, (kn.exec(o) || "") + "g")), o.lastIndex = 0; n = o.exec(f);) i = n.index;
                         t = t.slice(0, null == i ? e : i)
                     }
-                } else n.indexOf(o, e) != e && (o = t.lastIndexOf(o), -1 < o && (t = t.slice(0, o)));
+                } else n.indexOf(o, e) != e && (o = t.last
+                    (o), -1 < o && (t = t.slice(0, o)));
                 return t + r
             }, Nn.unescape = function(n) {
                 return (n = u(n)) && pn.test(n) ? n.replace(ln, d) : n
@@ -18987,7 +18988,7 @@ var clearViewSKU;
             });
 
             $(".thumb-temp").slick({
-                slidesToShow: 5,
+                slidesToShow: 4,
                 slidesToScroll: 1,
                 vertical: true,
                 infinite: false,
@@ -19284,13 +19285,13 @@ var clearViewSKU;
         function selectModel(model) {
             switch (model) {
                 //CASE UP2YOU
-                case 'up2you-s8':
+                case 'up2you-s7':
                     var oney24xPrice = UP2YOU_PRICE[0];
                     $('.option-select[data-opt-index=0] button[data-model-idx=0]').trigger('click');
                     $(".up2you-total__price [data='price-first']").text(oney24xPrice.first);
                     $(".up2you-total__price [data='price-monthly']").text(oney24xPrice.monthly);
                     break;
-                case 'up2you-s8plus':
+                case 'up2you-s7edge':
                     var oney24xPrice = UP2YOU_PRICE[1];
                     $('.option-select[data-opt-index=0] button[data-model-idx=1]').trigger('click');
                     $(".up2you-total__price [data='price-first']").text(oney24xPrice.first);
@@ -19298,7 +19299,7 @@ var clearViewSKU;
                     break;
                 //CASE NO UP2YOU
                 //S8
-                case 's8-black':
+                /*case 's8-black':
                     $('.option-select[data-opt-index=0] button[data-model-idx=0]').trigger('click');
                     $('.option-select.color-chip button[data-color-idx=0]').trigger('click');
                     console.log('black s8');
@@ -19328,7 +19329,7 @@ var clearViewSKU;
                     $('.option-select[data-opt-index=0] button[data-model-idx=1]').trigger('click');
                     $('.option-select.color-chip button[data-color-idx=2]').trigger('click');
                     console.log('orchid s8plus');
-                    break;
+                    break;*/
             }
         }
 
@@ -19341,7 +19342,7 @@ var clearViewSKU;
          * Reload page with good url (buy / rent)
          */
         $('.achat-loc .loc').on('click', function() {
-            document.location.href = '?model=up2you-s8';
+            document.location.href = '?model=up2you-s7';
         });
         $('.achat-loc .achat').on('click', function() {
             document.location.href = './';
@@ -19351,7 +19352,7 @@ var clearViewSKU;
         var model;
         model = getLocationParamsValue('model');
 
-        if(model == 'up2you-s8'){console.log('up2you-S8')}
+        if(model == 'up2you-s7'){console.log('up2you-S7')}
         // if(model == 'up2you-s8plus'){console.log('up2you-S8PluS')}
 
         if (isUp2you()) {
@@ -19371,7 +19372,7 @@ var clearViewSKU;
         }
 
         function isUp2you() {
-            return (model === 'up2you-s8') || (model === 'up2you-s8plus');
+            return (model === 'up2you-s7') || (model === 'up2you-s7edge');
         }
 
 
