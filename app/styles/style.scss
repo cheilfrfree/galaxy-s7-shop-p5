@@ -1,0 +1,1083 @@
+
+	.mobile{display:none;}
+	.desktop {display:block;}
+/* samsung-reset */
+.ss_samsung p {margin:0;}
+
+/* wrap-common */
+.pre-order{position:relative;}
+.pre-order .btn-default {display:inline-block; height:49px; padding:0 25px; line-height:49px; text-align:center; border-radius:45px; background-color:transparent; border:1px solid #000; -webkit-transition-duration:0.3s; -o-transition-duration:0.3s; transition-duration:0.3s; -webkit-transition-property:background,color,border-color; -o-transition-property:background,color,border-color; transition-property:background,color,border-color; -webkit-transition-timing-function:ease-in-out; -o-transition-timing-function: ease-in-out; transition-timing-function:ease-in-out; box-sizing:border-box; font-size:12px; font-family:'SamsungOne';font-weight:800; color:#000;}
+.pre-order .btn-default:focus,
+.pre-order .btn-default:active,
+.pre-order .btn-default:hover {background-color:#000; color:#fff;}
+.pre-order .btn-default.black {background-color:#000; color:#fff;}
+.pre-order .btn-default.black:focus,
+.pre-order .btn-default.black:active,
+.pre-order .btn-default.black:hover {background-color:transparent; color:#000;}
+.pre-order .btn-default.white {color:#fff; border-color:#fff;}
+.pre-order .btn-default.white:focus,
+.pre-order .btn-default.white:active,
+.pre-order .btn-default.white:hover {background-color:#fff; color:#000;}
+
+.pre-order .sub-title {font-size:40px; text-align:center; font-family:'SamsungOne';font-weight:bold;}
+
+.pre-order .total-box .total-inner .btn-order{float:right;}
+.pre-order .total-box .total-inner .btn-order + .btn-order{margin-right:13px;}
+
+/* anchor-wrap */
+.pre-order .anchor-wrap.fixed {position:fixed; top:0; right:0; left:0; z-index:1000;}
+.pre-order .anchor-inner {background:#212425;}
+.pre-order .anchor-inner.black {background:#141414;}
+.pre-order .anchor-inner.pc {display:block;}
+.pre-order .anchor-list-wrap {max-width:1440px; margin:0 auto; box-sizing:border-box;}
+.pre-order .anchor-list-wrap:after {display:block; clear:both; content:"";}
+
+.pre-order .nav-list-wrap {float:left;}
+.pre-order .nav-list-wrap .nav-title.mo {display:none; z-index:20;}
+.pre-order .nav-list-wrap .nav-title.pc {display:block;}
+.pre-order .nav-list-wrap .nav-title {padding-left:26px; line-height:50px; color:#fff; font-size:16px; font-family:'SamsungOne';font-weight:bold;}
+.pre-order .nav-list-wrap .nav-title .product-name {position:relative; display:inline-block;}
+.pre-order .nav-list-wrap .nav-title .product-name + .product-name {margin-left:6px; padding:0 10px;}
+.pre-order .nav-list-wrap .nav-title .product-name + .product-name:after {position:absolute; top:50%; left:0; width:1px; height:16px; margin-top:-9px; background:#fff; content:"";}
+.pre-order .nav-list-wrap .nav-title .more {display:none;}
+
+.pre-order .explain-list-wrap {float:right; z-index:20;}
+.pre-order .explain-list-wrap .btn-wrap {float:right; margin-left:19px; line-height:50px;}
+.pre-order .explain-list-wrap .btn-wrap a {display:block; padding:0 68px; background:#0074c2; font-size:14px; color:#fff; font-family:'SamsungOne';font-weight:600;}
+.pre-order .explain-list {position:relative; float:left;}
+.pre-order .explain-list ul:after {display:block; clear:both; content:"";}
+.pre-order .explain-list li {float:left; line-height:50px;}
+.pre-order .explain-list li a {display:block; padding:0 12px; font-size:14px; color:#fff; font-family:'SamsungOne';font-weight:600;}
+.pre-order .explain-bar {position:absolute; left:23px; bottom:10px; width:16px; height:3px; background:#fff;}
+
+.pre-order .nav-list.mo {display:none;}
+.pre-order .nav-list.pc {display:block;}
+.pre-order .nav-list {position:relative; padding:0 13px;}
+.pre-order .nav-list ul:after {display:block; clear:both; content:"";}
+.pre-order .nav-list ul li {float:left; line-height:35px;}
+.pre-order .nav-list ul li a {display:block; padding:0 13px; font-size:12px; color:#fff; font-family:'SamsungOne';font-weight:600;}
+.pre-order .nav-list.mo ul {position:absolute; top:0; left:0; right:0; z-index:100;}
+.pre-order .nav-bar {position:absolute; left:13px; bottom:0; width:71px; height:3px; background:#0073c3;}
+
+	.pre-order .explain-list-wrap {float:right; z-index:20;}
+    .pre-order .explain-list-wrap .btn-wrap {float:right; margin-left:19px; line-height:50px;}
+    .pre-order .explain-list-wrap .btn-wrap span {display:block; padding:0 68px; background:#0074c2; font-size:14px; color:#fff; font-family:'SamsungOne';font-weight:bold;}
+    .pre-order .explain-list {position:relative; float:left;}
+    .pre-order .explain-list ul:after {display:block; clear:both; content:"";}
+    .pre-order .explain-list li {float:left; line-height:50px;}
+    .pre-order .explain-list li a {display:block; padding:0 12px; font-size:14px; color:#fff; font-family:'SamsungOne';font-weight:bold;}
+    .pre-order .explain-bar {position:absolute; left:23px; bottom:10px; width:16px; height:3px; background:#fff;}
+
+/* kv-wrap */
+.pre-order .kv-wrap {/*max-width:1440px;*/ margin:0 auto; background:#f4f4f4; box-sizing:border-box; font-family:'SamsungOne';font-weight:bold;}
+.pre-order .kv-wrap .pre-inner {display:table; position:relative; width:100%; height:19vw; min-height:287px; box-sizing:border-box;}
+.pre-order .kv-wrap .pre-inner:after {display:block; clear:both; content:"";}
+.pre-order .kv-wrap .title-box {display:table-cell; width:100%; padding:0 60px; vertical-align:middle;}
+.pre-order .kv-wrap .title-box .product-name {display:block; font-weight:normal; font-size:24px;}
+.pre-order .kv-wrap .title-box .product-name span {position:relative; margin-right:11px;}
+.pre-order .kv-wrap .title-box .product-name span + span {padding:0 10px;}
+.pre-order .kv-wrap .title-box .product-name span + span:after {position:absolute; top:50%; left:0; width:1px; height:19px; margin-top:-11px; background:#7a7a7a; content:"";}
+.pre-order .kv-wrap .title-box .kv-title {line-height:52px; font-size:45px; letter-spacing:-1px;}
+.pre-order .kv-wrap .title-box .desc {margin-top:7px; line-height:33px; font-size:16px; font-family:'SamsungOne';font-weight:400;}
+.pre-order .kv-wrap .kv-image {position:absolute; top:0; right:0; text-align:right; width:100%;}
+.pre-order .kv-wrap .kv-image span {display:inline-block; /*width:800px;*/ width:100%; height:286px;}
+.pre-order .kv-wrap .kv-image span img {width:100%; max-width:100%;}
+
+
+/* product-wrap */
+.pre-order .product-wrap .option-select {width:73.2%; font-size:0;}
+.pre-order .product-wrap .option-select button {
+  width:28%;
+  height:50px;
+  padding:0 4px;
+  line-height:1.5;
+  text-align:center;
+  border:1px solid #d2d2d2;
+  box-sizing:border-box;
+  border-radius:3px;
+  font-size:12px;
+  font-family:'SamsungOne';
+  font-weight:400;
+}
+
+.pre-order .product-wrap .option-select button.active {
+  border:2px solid #000;
+}
+// .pre-order .product-wrap .option-select button.active.disabled {cursor: default; pointer-events: none;}
+.pre-order .product-wrap .option-select button {
+  margin-right:3.6%;
+  margin-bottom:3.6%;
+}
+.pre-order .product-wrap .option-select.col3 button {width:29.3%;}
+.pre-order .product-wrap .color-chip {font-size:0; width:90%;}
+.pre-order .product-wrap .color-chip button {overflow:hidden; position:relative; width:40px; height:40px; margin:0 15px 0 0; padding:0; text-align:center; border-radius:50%; border-color:#000; text-indent:-9999em; box-sizing:border-box;}
+.pre-order .product-wrap .color-chip button.active {border-width:1px;}
+.pre-order .product-wrap .color-chip button + button {margin:0 15px 0 0;}
+.pre-order .product-wrap .color-chip button span {display:block; width:38px; height:38px; border-radius:50%; box-sizing:border-box;}
+.pre-order .product-wrap .color-chip button:hover span,
+.pre-order .product-wrap .color-chip button.active span {width:30px; height:30px; margin:0 auto; border:1px solid #000; }
+.pre-order .product-wrap .product-list .color-chip button {width:24px; height:24px; margin:0; border:1px solid #fff;}
+.pre-order .product-wrap .product-list .color-chip button + button {margin:0 0 0 7px;}
+.pre-order .product-wrap .product-list .color-chip button span {width:18px; height:18px; margin:0 auto; border:1px solid #000;}
+.pre-order .product-wrap .product-list .color-chip button.active {border-color:#000;}
+.pre-order .product-wrap .product-list .color-chip button:hover,
+.pre-order .product-wrap .product-list .color-chip button.active span {border-color:#000;}
+.pre-order .product-wrap .sub-title {font-size:14px; letter-spacing:1px; font-family:'SamsungOne';font-weight:bold; font-weight:normal;}
+
+.pre-order .product-cont.buying {max-width:1200px; margin:30px auto 0; font-size:0;}
+.pre-order .product-cont.accessorise {max-width:1224px; margin:0 auto;}
+.pre-order .product-cont:after {display:block; clear:both; content:"";}
+.pre-order .product-cont + .product-cont {margin-top:48px;}
+
+.pre-order .product-visual {display:inline-block; width:62%; vertical-align:middle;}
+.pre-order .thumb-view {display:inline-block; width:9.4%; vertical-align:middle;}
+.pre-order .thumb-view .thumb-temp {overflow:visible; height:auto; text-align:center;}
+.pre-order .thumb-view .thumb-temp .slick-list {max-height:380px; margin:12px 0 13px;}
+.pre-order .thumb-view .thumb-temp .slick-slide {max-width:68px; padding:4px 0; box-sizing:border-box;}
+.pre-order .thumb-view .thumb-temp .slick-slide.active > a {border:2px solid #121212; box-sizing:border-box;}
+.pre-order .thumb-view .thumb-temp .slick-slide > a {display:block; border:1px solid #767676;}
+.pre-order .thumb-view .thumb-temp div img {width:100%; height:auto;}
+.pre-order .thumb-view .thumb-temp .slick-prev,
+.pre-order .thumb-view .thumb-temp .slick-next {width:100%; text-align:center;}
+.pre-order .product-view {display:inline-block; width:90.6%; vertical-align:middle;}
+.pre-order .product-view .product-temp {overflow:hidden;}
+.pre-order .product-view .product-temp:after {display:block; clear:both; content:"";}
+.pre-order .product-view .product-temp div {text-align:center;}
+.pre-order .product-view .product-temp div span {display:block; padding:0 14.8%; box-sizing:border-box; vertical-align:middle;}
+.pre-order .product-view .product-temp div img {width:100%; height:auto;}
+.pre-order .product-detail {display:inline-block; width:38%; padding-top:45px; vertical-align:middle; font-size:14px;}
+.pre-order .product-title.mobile {display:none !important;}
+.pre-order .product-title.pc {display:block !important;}
+.pre-order .product-title .produt-name h2 {font-size:32px; font-family:'SamsungOne';font-weight:800;}
+.pre-order .product-title .produt-name h2:after {display:block; clear:both; content:"";}
+.pre-order .product-title .produt-name h2 span {position:relative; float:left;}
+.pre-order .product-title .produt-name h2 span + span {margin-left:21px; padding:0 21px;}
+.pre-order .product-title .produt-name h2 span + span +span {margin-left:0px; padding:0 21px;}
+.pre-order .product-title .produt-name h2 span + span:after {position:absolute; top:50%; left:1px; width:1px; height:22px; margin-top:-11px; background:#767676; content:"";}
+.pre-order .product-title .product-desc {margin-top:23px; padding-right:20px; line-height:24px; font-size:14px; font-family:'SamsungOne';font-weight:600;}
+.pre-order .product-detail .product-option {margin-top:38px;}
+.pre-order .product-detail .product-option + .product-option {margin-top:23px;}
+.pre-order .product-detail .product-option .option-name {font-size:12px; color:#3c3c3c; letter-spacing:2px; font-family:'SamsungOne';font-weight:600;}
+.pre-order .product-detail .product-option dd {margin-top:13px;}
+.pre-order .product-detail .option-txt {font-size:18px; font-family:'SamsungOne';font-weight:400;}
+.pre-order .product-detail .note-desc {margin-top:25px; line-height:24px; font-size:14px; font-family:'SamsungOne';font-weight:600;}
+.pre-order .product-detail .btn-store {display:inline-block; margin-top:23px; padding-right:15px; background:url('/images/btn-more-right.png') right 2px no-repeat; }
+.pre-order .product-detail .btn-store a {display:block; border-bottom:1px solid #989898; letter-spacing:1px; font-size:12px; color:#000; font-family:'SamsungOne';font-weight:800;}
+.pre-order .product-detail .none-shop .btn-store {margin-top:45px;}
+
+
+	.s-gotop-wrap .s-btn-gotop:after{
+		background: url('/images/btn-arrow-up-white.png');
+		height:15px;
+		width:34px;
+	}
+
+
+.pre-order .product-wrap .product-list .option-select {display:inline-block; width:auto; vertical-align:middle;}
+.pre-order .product-wrap .product-list .option-select button {width:150px; height: 41px; text-align:center; font-size:14px; color:#3c3c3c; font-family:'SamsungOne';font-weight:600;}
+.pre-order .product-wrap .accessorise .sub-title {padding:0 12px;}
+.pre-order .product-list {margin-top:35px; overflow:hidden; box-sizing:border-box;}
+.pre-order .product-list:after {display:block; clear:both; content:"";}
+.pre-order .product-list > button {position:absolute; top:50%; margin-top:-20px; z-index:100;}
+.pre-order .product-list > button span {display:block;}
+.pre-order .product-list > button.btn-prev {left:12px;}
+.pre-order .product-list > button.btn-next {right:12px;}
+.pre-order .product-list .slick-list:after {display:block; position:absolute; top:0; right:0; bottom:0; width:5px; height:100%; background:#fff; content:"";}
+.pre-order .product-list .slick-slide {float:left; width:33.3%;}
+.pre-order .product-list .slick-slide > .product-item {border-right:2px solid #f2f2f2;}
+.pre-order .product-list .slick-slide:last-child > .product-item {border-right:0;}
+.pre-order .product-list .product-image {padding:0 12px;}
+.pre-order .product-list .product-image img {max-width:100%; margin:0 auto;}
+.pre-order .product-list .product-component {text-align:center;}
+.pre-order .product-list .color-chip {width:100%; margin-top:10px;}
+.pre-order .product-list .product-name {display:block; margin-top:13px; font-size:16px; font-family:'SamsungOne';font-weight:800; font-weight:normal;}
+.pre-order .product-list .buy-info {margin-top:16px; font-size:0;}
+.pre-order .product-list .buy-info .product-price {overflow:initial; display:inline-block; width:auto; padding-top:0; vertical-align:middle; font-size:16px; color:#3c3c3c; font-family:'SamsungOne';font-weight:600;margin-right: 17px;}
+// .pre-order .product-list .buy-info .product-price + .option-select {margin-left:19px;}
+.pre-order .product-list .btn-more {margin-top:20px;}
+.pre-order .product-list .btn-more.none-shop {margin-top:0}
+.pre-order .product-list .btn-more span {display:inline-block; border-bottom:1px solid #989898;}
+.pre-order .product-list .btn-more span a {letter-spacing:1px; font-size:12px; color:#000; font-family:'SamsungOne';font-weight:800;}
+.pre-order .shop-box {margin-top:39px; text-align:center; font-size:14px;}
+.pre-order .shop-box .pre-inner {display:inline-block;}
+.pre-order .shop-box .pre-inner:after {display:block; clear:both; content:"";}
+.pre-order .shop-box .title {float:left; color:#49545f; font-family:'SamsungOne';font-weight:800; font-weight:normal;}
+.pre-order .shop-box .shop-list {float:left;}
+.pre-order .shop-box .shop-list li {float:left; margin-left:20px;}
+.pre-order .shop-box .shop-list li a {color:#0072c2; text-decoration:underline; font-family:'SamsungOne';font-weight:600;}
+
+.pre-order .order-title {max-width:1200px; margin:0 auto;}
+.pre-order .order-box {margin-top:15px; background:#f5f5f5;}
+.pre-order .order-box .pre-inner {max-width:1200px; margin:0 auto; padding:30px 0;}
+.pre-order .order-box .pre-inner:after {display:block; clear:both; content:"";}
+.pre-order .price-list {float:left; padding-top:9px;}
+.pre-order .price-list li {float:left; font-size:0; color:#000;}
+.pre-order .price-list li.active {color:#000;}
+.pre-order .price-list li.active .price-step {color:#1428a0;}
+.pre-order .price-list li + li {margin-left:60px;}
+.pre-order .price-list li .price-step {display:inline-block; vertical-align:top; font-size:54px; color:#000; font-family:'SamsungOne';font-weight:700;}
+.pre-order .price-list li .price-detail {display:inline-block; max-width:385px; margin-left:13px; padding-top:9px; vertical-align:middle;}
+.pre-order .price-list li .price-detail .price-title {font-size:14px; font-weight:normal; font-family:'SamsungOne';font-weight:800;}
+.pre-order .price-list li .price-detail .price-select {display:block; margin-top:7px; font-size:18px; font-family:'SamsungOne';font-weight:400;}
+.pre-order .price-list li .price-detail .item-list {max-height:90px; overflow:hidden;}
+.pre-order .price-list li .price-detail .btn-delete {display:inline-block; margin-left:10px;}
+.pre-order .price-list li .price-detail .btn-more {display:inline-block; margin-top:9px; font-size:12px; font-family:'SamsungOne';font-weight:800; color:#000; cursor:default;}
+.pre-order .total-box {text-align:right;}
+.oney-text.total-area__frame__block__txt{font-size: 14px; font-family:'SamsungOne'; color:#727272;display:block;line-height:18px;}
+.pre-order .total-box .calc {display:inline-block; padding-bottom:4px; border-bottom:1px solid #ccc;}
+.pre-order .total-box .calc a {display:block; padding-right:22px; background:url('/images/icon-calc.png') right center no-repeat; font-size:16px; color:#3c3c3c; font-family:'SamsungOne';font-weight:400;}
+.pre-order .total-box .price-total {margin:7px 0 14px;}
+.pre-order .total-box .price-total .title {
+  display:inline-block;
+  margin-right:5px;
+  vertical-align:text-bottom;
+  font-size:24px;
+  font-family:'SamsungOne';
+  font-weight:800;
+  font-weight:normal;
+  padding-bottom:5px;
+  padding-top:7px;
+}
+.pre-order .total-box .price-total .price-info {display:inline-block; vertical-align:bottom; font-family:'SamsungOne';font-weight:400;}
+.pre-order .total-box .price-total .price-info:after {display:block; clear:both; content:"";}
+.pre-order .total-box .price-total .price-cost {float:right; margin-left:11px; padding-top:12px; font-size:20px; text-decoration:line-through;}
+.pre-order .total-box .price-total .price-final {float:left; font-size:34px;}
+.pre-order .total-box .btn-order .btn-default {min-width:186px; letter-spacing:2px;text-transform:uppercase;position:relative;}
+.pre-order .total-box .btn-order .btn-default.loader:after{content:'';background:url('/images/ajax-loader.gif'); display:inline-block; width: 18px; height:18px;position:absolute;right:10px;top:15px;background-size:contain;background-repeat:no-repeat;}
+.pre-order .total-box .btn-order .btn-default.loader{padding-right:35px; transition:0.4s padding ease-out;}
+
+.pre-order .slick-prev.slick-disabled,
+.pre-order .slick-next.slick-disabled {opacity:0.3;}
+
+/* service-wrap */
+.pre-order .service-wrap {max-width:1200px; margin:100px auto 0;}
+.pre-order .service-list{max-width: 1440px; margin: 30px auto;}
+.pre-order .service-list:after {display:block; clear:both; content:"";}
+.pre-order .service-list li {float:left; width:20%; padding:0 15px; text-align:center; box-sizing:border-box; min-height:95px;}
+.pre-order .service-list li .service-image img {width:50px;}
+.pre-order .service-list.list4x li{width: 25%;}
+.pre-order .service-list li + li {border-left:1px solid #e5e5e5;}
+.pre-order .service-list li .desc a {margin-top:5px; font-size:15px; font-family:'SamsungOne';font-weight:400; color:#000;display:block;line-height:20px;}
+.pre-order .service-list li .desc.bottom a{margin-top:0; font-size:14px;line-height: 14px;}
+.pre-order .banner-area {position:relative; margin-top:50px;}
+.pre-order .banner-area img {width:100%; vertical-align:middle;}
+.pre-order .banner-area .ad-info {position:absolute; top:0; left:0; right:0; bottom:0; width:100%; height:100%;}
+.pre-order .banner-area .ad-info .ad-inner {display:table; width:100%; height:100%;}
+.pre-order .banner-area .ad-info .ad-txt {display:table-cell; padding:0 60px; vertical-align:middle;}
+.pre-order .banner-area .ad-info .desc {display:block; line-height:37px; font-size:30px; font-weight:normal; color:#0058b3; font-family:'SamsungOne';font-weight:bold;}
+.pre-order .banner-area .ad-info .btn-default {margin-top:30px; letter-spacing:3px;}
+.pre-order .banner-area .ad-info .desc.white {color:#fff;}
+.pre-order .banner-area.none-shop .ad-info .desc {color:#fff;}
+.pre-order .banner-area.none-shop .ad-info .btn-default {margin-top:27px; letter-spacing:2px;}
+
+/* component-wrap */
+.pre-order .component-wrap {max-width:1200px; margin:0 auto;}
+.pre-order .component-wrap .sub-title {margin-top:33px;}
+.pre-order .component-cont {margin-top:45px; text-align:center; font-size:14px; font-family:'SamsungOne';font-weight:600;}
+.pre-order .component-cont:after {display:block; clear:both; content:"";}
+.pre-order .component-cont .product-thumb {display:block; position:relative; float:left; width:28%;}
+.pre-order .component-cont .product-thumb:after {position:absolute; top:10px; right:-2px; display:block; width:2px; height:270px; background:#e9e9e9; content:"";}
+.pre-order .component-cont .product-compose {float:left; width:72%;}
+.pre-order .component-cont .product-compose ul:after {display:block; clear:both; content:"";}
+.pre-order .component-cont .product-compose li {float:left; width:25%; margin-bottom:60px;}
+.pre-order .component-cont .product-compose li:first-child {display:none;}
+.pre-order .component-cont .product-compose li .comp-image img {max-width:100%;}
+.pre-order .component-cont .product-name,
+.pre-order .component-cont .comp-desc {display:block; margin-top:14px; font-weight:normal; min-height: 40px;}
+
+/* check-wrap */
+.pre-order .check-wrap {max-width:1200px; margin:60px auto 180px;}
+.pre-order .check-wrap .sub-title {margin-top:33px;}
+.pre-order .check-wrap .check-list {margin-top:46px;}
+.pre-order .check-wrap .check-list ul {width:102%; margin-left:-2%;}
+.pre-order .check-wrap .check-list ul:after {display:block; clear:both; content:"";}
+.pre-order .check-wrap .check-list li {float:left; width:14.6666%; margin:0 0 20px 2%; padding-bottom:1px; box-sizing:border-box; text-align:center; border:1px solid #767676;}
+.pre-order .check-wrap .check-list li a {display:block;}
+.pre-order .check-wrap .check-list li img {width:100%; vertical-align:middle;}
+
+/* slick */
+.slick-disabled {display:none !important;}
+
+
+.strikePrice{
+  position: relative;
+  margin-right:10px;
+}
+
+.strikePrice:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 45%;
+  right: 0;
+  border-top: 3px solid;
+  border-color: red;
+
+ -webkit-transform:rotate(-30deg);
+  -moz-transform:rotate(-30deg);
+  -ms-transform:rotate(-30deg);
+  -o-transform:rotate(-30deg);
+  transform:rotate(-30deg);
+}
+
+.strikePrice2{
+  position: relative;
+  font-size:26px;
+  margin-right:10px;
+  display:inline !important;
+}
+
+.strikePrice2:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 40%;
+  right: 0;
+  border-top: 3px solid;
+  border-color: red;
+
+  -webkit-transform:rotate(-30deg);
+  -moz-transform:rotate(-30deg);
+  -ms-transform:rotate(-30deg);
+  -o-transform:rotate(-30deg);
+  transform:rotate(-30deg);
+}
+
+
+/** COLOR CLEAR VIEW */
+
+#clearViewColorSelect{
+  width:170px;
+  position:relative;
+  top:-47px;
+  margin-left:23%;
+  display:none;
+
+}
+
+#clearViewColorSelect .color-chip button {
+  width:24px;
+  height:24px;
+  margin:0;
+  border:1px solid #fff;
+}
+
+#clearViewColorSelect .color-chip button + button {
+  margin:0 0 0 7px;
+}
+
+#clearViewColorSelect .color-chip button span {
+  width:18px;
+  height:18px;
+  margin:0 auto;
+  border:1px solid #000;
+}
+#clearViewColorSelect .color-chip button.active {
+  border-color:#000;
+}
+#clearViewColorSelect .color-chip button:hover,
+#clearViewColorSelect .color-chip button.active span {
+  border-color:#000;
+}
+
+@media screen and (max-width:960px) {
+  #clearViewColorSelect{
+    width:100px;
+    top:-55px;
+    margin-left:26%;
+    text-align:center;
+  }
+}
+
+@media screen and (max-width:768px) {
+#clearViewColorSelect{
+    width:200px;
+    top:-43px;
+    margin-left:23%;
+    text-align:left;
+  }
+}
+@media screen and (max-width:400px) {
+#clearViewColorSelect{
+    width:200px;
+    top:-37px;
+    margin-left:23%;
+    text-align:left;
+  }
+}
+
+@media screen and (max-width:1440px) {
+
+	/* kv-wrap */
+	.pre-order .kv-wrap .pre-inner {height:19.9vw; min-height:19.9vw;}
+	.pre-order .kv-wrap .title-box {padding:0 4.1666vw;}
+	.pre-order .kv-wrap .title-box .kv-title {font-size:3.5vw; line-height:3.2vw;}
+	// .pre-order .kv-wrap .kv-image span {width:55.6111vw; height:34.2361vw;}
+	.pre-order .kv-wrap .kv-image span img {width:100%; max-width:100%;}
+	.pre-order .kv-wrap .title-box .desc {line-height:2.2222vw; font-size:1.1111vw}
+
+	/* product-wrap */
+	.pre-order .product-cont.buying {padding:0 12px;}
+	.pre-order .product-title .product-desc {padding:0;}
+
+	.pre-order .order-title {padding:0 12px;}
+	.pre-order .order-box .pre-inner {padding:30px 12px;}
+
+	/* service-wrap */
+	.pre-order .banner-area .ad-info .ad-txt {padding:0 4.1666vw;}
+	.pre-order .banner-area .ad-info .btn-default {margin-top:2.0833vw;}
+	.pre-order .banner-area.none-shop .ad-info .btn-default {margin-top:1.875vw;}
+
+	/* check-wrap */
+	.pre-order .check-wrap {padding:0 12px;}
+
+}
+
+@media screen and (max-width:1024px) {
+
+	/* kb-wrap */
+	.pre-order .kv-wrap .title-box .desc {line-height:28px; font-size:14px;}
+
+	/* anchor-wrap */
+	.pre-order .anchor-inner {position:relative;}
+	.pre-order .anchor-inner.pc {display:none;}
+	.pre-order .anchor-inner .layer-mask {display:none; position:fixed; top:0; right:0; bottom:0; left:0; width:100%; height:100%; background:url('/images/bg-layer-mask.png') repeat; z-index:10;}
+	.pre-order .nav-list-wrap .nav-title.pc {display:none;}
+	.pre-order .nav-list-wrap .nav-title.mo {display:block;}
+	.pre-order .nav-list-wrap .nav-title {position:relative; height:74px; height:7.2265vw; margin-right:260px; margin-right:36.1111vw; padding:0; font-size:22px; font-size:2.1484vw; font-family:"SamsungOne";font-weight:bold;}
+	.pre-order .nav-list-wrap .nav-title a {display:block; padding-left:21px; padding-left:2.9166vw; color:#fff;}
+	.pre-order .nav-list-wrap .nav-title .product-name {line-height:74px; line-height:7.2265vw;}
+	.pre-order .nav-list-wrap .nav-title .product-name + .product-name {margin-left:8px; margin-left:0.6812vw; padding:0 10px; padding:0 1.3vw;}
+	.pre-order .nav-list-wrap .nav-title .product-name + .product-name:after {height:20px; height:1.9531vw; margin-top:-19px; margin-top:-1.2222vw;}
+	.pre-order .nav-list-wrap .nav-title .more {position:absolute; top:50%; right:30px; right:4.1666vw; display:inline-block; width:34px; width:2.7343vw; height:15px; height:1.4648vw; margin-top:-9px; margin-top:-0.8vw; background:url('/images/btn-arrow-down-white.png') no-repeat; background-size:100%; text-indent:-9999em;}
+	.pre-order .nav-list-wrap.active .more {background:url('/images/btn-arrow-up-white.png'); background-size:100%;}
+	.pre-order .nav-list-wrap {float:none}
+	.pre-order .nav-list-wrap.active .nav-list.mo {display:block;}
+	.pre-order .nav-list.pc {display:none;}
+	.pre-order .nav-list.mo {padding:0;}
+	.pre-order .nav-list ul li {position:static; display:table; float:none; width:100%; height:63px; height:6.1523vw; line-height:1.32; background:#363636; border-bottom:1px solid #636363; box-sizing:border-box;}
+	.pre-order .nav-list ul li a {display:table-cell; padding:0 23px; padding:0 2.246vw; vertical-align:middle; font-size:20px; font-size:1.9531vw; color:#636363; font-family:"SamsungOne";font-weight:bold;}
+	.pre-order .nav-list ul li a:hover,
+	.pre-order .nav-list ul li a:active,
+	.pre-order .nav-list ul li a:focus {color:#fff; background:#222425;}
+	.pre-order .explain-list-wrap {float:none; position:absolute; right:0; top:0; display:inline-block;}
+	.pre-order .explain-list-wrap .btn-wrap {float:none; width:260px; width:36.1111vw; height:74px; height:7.2265vw; margin:0; line-height:136px; line-height:7.2265vw;}
+	.pre-order .explain-list-wrap .btn-wrap a {height:100%; padding:0; text-align:center; font-size:22px; font-size:2.1484vw;}
+	.pre-order .explain-list {display:none;}
+
+
+	.pre-order .kv-wrap .title-box .kv-title {font-size:3.5vw; line-height:3.2vw;}
+
+	/* product-wrap */
+	.pre-order .product-cont.buying {padding:0 32px;}
+	// .pre-order .product-wrap .option-select {width:100%;}
+
+	.pre-order .product-view .product-temp div span {padding:0 5%;}
+
+	.pre-order .product-detail {padding-top:0;}
+	.pre-order .product-detail .product-desc {padding:0;}
+
+	.pre-order .product-cont.accessorise {padding:0 20px;}
+
+	.pre-order .order-title {padding:0 32px;}
+	.pre-order .order-box .pre-inner {padding:30px 32px 26px;}
+	.pre-order .price-list {float:none; padding:0;}
+	.pre-order .price-list:after {display:block; clear:both; content:"";}
+	.pre-order .price-list li {width:25%;}
+	.pre-order .price-list li + li {margin:0;}
+	.pre-order .price-list li .price-step {font-size:48px;}
+	.pre-order .price-list li .price-detail {display:block; margin:0; padding-top:6px;}
+	.pre-order .total-box {float:none; margin-top:27px; padding-top:25px; border-top:1px solid #e5e5e5;}
+	.pre-order .total-box .total-inner {display:inline-block; margin-right:36px;width:100%;}
+	.pre-order .total-box .total-inner .price-box {display:inline-block; vertical-align: middle;float:left;}
+	.pre-order .total-box .total-inner .btn-order {display:inline-block; margin:10px 0 0 17px; vertical-align: middle;}
+	.pre-order .total-box .price-total {margin-bottom:0;}
+	.pre-order .total-box .price-total .title {font-size:22px;}
+	.pre-order .total-box .price-total .price-cost {font-size:18px;}
+	.pre-order .total-box .price-total .price-final {font-size:32px;}
+
+	/* service-wrap */
+	.pre-order .service-wrap {padding:0 32px;}
+
+	/* component-wrap */
+	.pre-order .component-wrap {padding:0 32px;}
+
+	/* check-wrap */
+	.pre-order .check-wrap {padding:0 32px;}
+	.pre-order .check-wrap .check-list li {width:23%;}
+
+}
+
+@media screen and (max-width:935px) {
+
+	/* product-wrap */
+	.pre-order .product-wrap .color-chip button {width:36px; height:36px; margin:0 8px 0 0;}
+	.pre-order .product-wrap .color-chip button + button {margin:0 8px 0 0;}
+	.pre-order .product-wrap .color-chip button span {width:34px; height:34px;}
+	.pre-order .product-wrap .color-chip button:hover span,
+	.pre-order .product-wrap .color-chip button.active span {width:28px; height:28px;}
+
+	.pre-order .product-title .produt-name h2 {font-size:28px;}
+	.pre-order .product-title .produt-name h2 span + span {margin-left:11px; padding:0 11px;}
+
+	.pre-order .product-wrap .accessorise .color-chip button:hover span,
+	.pre-order .product-wrap .accessorise .color-chip button.active span {width:18px; height:18px;}
+
+}
+
+@media screen and (max-width:870px) {
+
+	/* service-wrap */
+	.pre-order .banner-area .ad-info .desc {font-size:26px;}
+
+}
+
+@media screen and (max-width:768px) {
+	.bg-grey{font-size: 2vw !important;}
+	.mobile{display:block;}
+	.desktop {display:none;}
+	/* wrap-common */
+	.pre-order .sub-title {font-size:24px;}
+
+	/* kv-wrap */
+	.pre-order .kv-wrap .pre-inner {display:block; height:auto; min-height:auto; padding-top:0;}
+	.pre-order .kv-wrap .title-box {display:block; width:100%; padding:0; margin:0; text-align:center;}
+	.pre-order .kv-wrap .title-box .product-name {font-size:28px; font-size:3.8888vw;}
+	.pre-order .kv-wrap .title-box .product-name span + span:after {height:22px; height:3.0555vw; margin-top:-13px; margin-top:-1.8055vw;}
+	.pre-order .kv-wrap .title-box .kv-title {line-height:1.2; font-size:48px; font-size:6.6666vw;}
+	.pre-order .kv-wrap .title-box .desc {margin-top:7px; margin-top:0.9722vw; line-height:36px; line-height:5vw; font-size:20px; font-size:2.7777vw;}
+	.pre-order .kv-wrap .kv-image {position:static; display:block; width:100%; height:auto; margin-top:0; padding:0; box-sizing:border-box; text-align:center;}
+	.pre-order .kv-wrap .kv-image span {width:auto; height:auto; max-width:452px; max-width:100vw;}
+	.pre-order .kv-wrap .kv-image span img {width:auto; height:auto;}
+
+	/* anchor-wrap */
+	.pre-order .anchor-inner {position:relative;}
+	.pre-order .anchor-inner.pc {display:none;}
+	.pre-order .anchor-inner .layer-mask {position:fixed; top:0; right:0; bottom:0; left:0; width:100%; height:100%; background:url('/images/bg-layer-mask.png') repeat;}
+	.pre-order .nav-list-wrap .nav-title.pc {display:none;}
+	.pre-order .nav-list-wrap .nav-title.mo {display:block; width:100%;}
+	.pre-order .nav-list-wrap .nav-title {position:relative; height:136px; height:18.8888vw; margin-right:260px; margin-right:36.1111vw; padding:0; font-size:36px; font-size:5vw; font-family:"SamsungOne";font-weight:bold;}
+	.pre-order .nav-list-wrap .nav-title a {display:block; padding-left:21px; padding-left:2.9166vw; color:#fff; width:100%;}
+	.pre-order .nav-list-wrap .nav-title .product-name {line-height:136px; line-height:18.8888vw;}
+	.pre-order .nav-list-wrap .nav-title .product-name + .product-name {margin-left:8px; margin-left:1.1111vw; padding:0 20px; padding:0 2.7777vw;}
+	.pre-order .nav-list-wrap .nav-title .product-name + .product-name:after {height:33px; height:4.5833vw; margin-top:-19px; margin-top:-2.6388vw;}
+	.pre-order .nav-list-wrap .nav-title .more {position:absolute; top:50%; right:30px; display:inline-block; width:34px; width:4.7222vw; height:18px; height:2.5vw; margin-top:-9px; margin-top:-1.25vw; background:url('/images/btn-arrow-down-white.png') no-repeat; background-size:100%; text-indent:-9999em;}
+	.pre-order .nav-list-wrap.active .more {background:url('/images/btn-arrow-up-white.png'); background-size:100%;}
+	.pre-order .nav-list-wrap {float:none}
+	.pre-order .nav-list-wrap.active .nav-list.mo {display:block;}
+	.pre-order .nav-list.pc {display:none;}
+	.pre-order .nav-list.mo {padding:0;}
+	.pre-order .nav-list ul li {position:static; display:table; float:none; width:100%; height:128px; height:17.7777vw; line-height:1.32; background:#363636; border-bottom:1px solid #636363; box-sizing:border-box;}
+	.pre-order .nav-list ul li a {display:table-cell; padding:0 62px; padding:0 8.61111vw; vertical-align:middle; font-size:32px; font-size:4.4444vw; color:#636363; font-family:"SamsungOne";font-weight:bold;}
+	.pre-order .explain-list-wrap {float:none; position:absolute; right:0; top:0; display:inline-block;}
+	.pre-order .explain-list-wrap .btn-wrap {float:none; width:260px; width:36.1111vw; height:136px; height:18.8888vw; margin:0; line-height:136px; line-height:18.8888vw;}
+	.pre-order .explain-list-wrap .btn-wrap a {height:100%; padding:0; text-align:center; font-size:26px; font-size:3.6111vw;}
+	.pre-order .explain-list {display:none;}
+
+	/* product-wrap */
+	.pre-order .product-cont.buying {margin-top:36px; padding:0 15px;}
+
+	.pre-order .product-wrap .option-select button {height:35px; line-height:14px; font-size:12px;}
+	.pre-order .product-wrap .color-chip button {width:30px; height:30px; margin-right:12px;}
+	.pre-order .product-wrap .color-chip button + button {margin-right:12px;}
+	.pre-order .product-wrap .color-chip button span {width:28px; height:28px;}
+	.pre-order .product-wrap .color-chip button:hover span,
+	.pre-order .product-wrap .color-chip button.active span {width:22px; height:22px;}
+
+	.pre-order .product-title.mobile {display:block !important;}
+	.pre-order .product-title.pc {display:none !important;}
+	.pre-order .product-title .produt-name h2 {font-size:48px; font-size:6.6666vw; font-family:'SamsungOne';font-weight:bold;}
+	.pre-order .product-title .produt-name h2 span + span {margin-left:19px; margin-left:2.6388vw; padding:0 22px; padding:0 3.0555vw;}
+	.pre-order .product-title .produt-name h2 span + span:after {height:37px; height:5.1388vw; margin-top:-20px; margin-top:-2.7777vw; background:#7f7f7f ;}
+	.pre-order .product-title .product-desc {margin-top:26px; margin-top:3.6111vw; padding:0; line-height:37px; line-height:5.1388vw; font-size:20px; font-size:2.7777vw;}
+
+	.pre-order .product-visual {position:relative; display:block; width:100%; margin-top:37px; padding-bottom:73px;}
+	.pre-order .thumb-view {position:absolute; bottom:0; display:block; width:100%; text-align:center;}
+	.pre-order .thumb-view .thumb-temp {display:inline-block; position:static; max-width:300px;}
+	.pre-order .thumb-view .thumb-temp:after {display:block; clear:both; content:"";}
+	.pre-order .thumb-view .thumb-temp > button {position:absolute; top:50%; margin-top:-10px;}
+	.pre-order .thumb-view .thumb-temp > button.btn-prev {left:0;}
+	.pre-order .thumb-view .thumb-temp > button.btn-next {right:0;}
+	.pre-order .thumb-view .thumb-temp > button.btn-prev img,
+	.pre-order .thumb-view .thumb-temp > button.btn-next img {width:10px;}
+	.pre-order .thumb-view .thumb-temp .slick-list {margin:0;}
+	.pre-order .thumb-view .thumb-temp div.slick-slide {width:50px !important;}
+	.pre-order .thumb-view .thumb-temp div.slick-slide + div.slick-slide {margin-left:12px;}
+	.pre-order .thumb-view .thumb-temp div a {max-width:61px;}
+	.pre-order .thumb-view .thumb-temp div + div {margin:0;}
+	.pre-order .thumb-view .thumb-temp button span {display:block;}
+	.pre-order .thumb-view .thumb-temp .slick-prev,
+	.pre-order .thumb-view .thumb-temp .slick-next {position:absolute; top:50%; max-width:9px; height:auto; margin-top:-10px;}
+	.pre-order .thumb-view .thumb-temp .slick-prev img,
+	.pre-order .thumb-view .thumb-temp .slick-next img {width:100%;}
+	.pre-order .thumb-view .thumb-temp .slick-prev {left:0;}
+	.pre-order .thumb-view .thumb-temp .slick-next {right:0;}
+
+	.pre-order .product-view {display:block; width:100%; max-width:100%;}
+	.pre-order .product-view .product-temp {max-width:initial; height:251px;}
+	.pre-order .product-view .product-temp div {display:block;}
+	.pre-order .product-view .product-temp div span {display:block; padding:0 30.9%;}
+	.pre-order .product-view .product-temp div span.pack {padding:0;}
+	.pre-order .product-view .product-temp div img {max-width:121px; height:auto; margin:0 auto;}
+	.pre-order .product-view .product-temp div span.pack img {max-width:352px;}
+
+
+	.pre-order .product-detail {display:block; width:100%; padding:0;}
+	.pre-order .product-detail .option-txt {font-size:15px;}
+	.pre-order .product-detail .note-desc {width:95%; margin-top:22px; line-height:18px; font-size:12px;}
+	.pre-order .product-detail .product-option {margin-top:34px;}
+	.pre-order .product-detail .btn-wrap {float:right; width:35%; margin-top:31px; text-align:right;}
+	.pre-order .product-detail .btn-store {margin:0;}
+	.pre-order .product-detail .btn-wrap.none-shop {float:none; width:100%; margin-top:18px; text-align:left;}
+	.pre-order .product-detail .btn-wrap.none-shop .btn-store {margin-top:0;}
+
+	.pre-order .product-cont + .product-cont {margin-top:31px;}
+
+	.pre-order .product-cont.accessorise {padding:0 15px;}
+	.pre-order .product-wrap .accessorise .sub-title {padding:0;}
+	.pre-order .product-wrap .accessorise .product-list .color-chip button {width:20px; height:20px;}
+	.pre-order .product-wrap .accessorise .color-chip button:hover span,
+	.pre-order .product-wrap .accessorise .color-chip button.active span {width:16px; height:16px;}
+	.pre-order .product-wrap .product-list .option-select{width:100%;}
+	.pre-order .product-wrap .product-list .option-select button {/*width:53px;*/ height:35px; line-height:35px; font-size:12px; font-family:'SamsungOne';font-weight:400;margin-top:15px;}
+	.pre-order .product-list {margin-top:10px;}
+	.pre-order .product-list > div {position:relative; float:none; width:100%; padding:20px 0;}
+	.pre-order .product-list > div + div {border:none; border-top:1px solid #e6e6e6;}
+	.pre-order .product-list .product-item {display:table; width:100%;}
+	.pre-order .product-list .product-image {display:table-cell; width:114px; max-width:114px; padding:0; vertical-align:middle;}
+	.pre-order .product-list .product-component {position:relative; display:table-cell; padding:0 6px 4px 11px; text-align:left; vertical-align:top;}
+	.pre-order .product-list .product-name {margin-top:0; font-size:14px;}
+	.pre-order .product-list .buy-info {margin-top:6px;}
+	.pre-order .product-list .buy-info .product-price {font-size:12px;}
+	.pre-order .product-list .btn-more { margin-top:15px;}
+	.pre-order .product-list .btn-more.none-shop {position:static;}
+
+	.oney-text.total-area__frame__block__txt{font-size:13px;}
+
+	.pre-order .service-list.list4x li{width: 100%;}
+	.pre-order .service-list.list4x li:first-child{margin-bottom:15px;}
+
+	.other-shops-button {padding-left:20px; width: 100% !important;text-align:center;}
+	.pre-order .shop-box {margin-top:19px; font-size:12px;}
+	.pre-order .shop-box .shop-list li {margin-left:15px;}
+
+	.pre-order .order-title {padding:0 15px;}
+	.pre-order .order-box .pre-inner {padding:0 15px 15px;}
+	.pre-order .price-list {float:none;}
+	.pre-order .price-list li {position:relative; float:none; width:100%; min-width:100%; padding:15px 0; color:#000;}
+	.pre-order .price-list li:after {display:block; clear:both; content:"";}
+	.pre-order .price-list li + li {margin:0; border-top:1px solid #e6e6e6;}
+	.pre-order .price-list li .price-step {position:absolute; top:15px; left:0; font-size:25px; font-family:'SamsungOne';font-weight:800;}
+	.pre-order .price-list li .price-detail {max-width:100%; width:100%; padding-left:21px; box-sizing:border-box;}
+	.pre-order .price-list li .price-detail:after {display:block; clear:both; content:"";}
+	.pre-order .price-list li .price-detail .price-title {float:left; font-size:15px;}
+	.pre-order .price-list li .price-detail .price-select {float:right; margin:0; font-size:15px;}
+	.pre-order .price-list li .price-detail .item-list-box:after {display:block; clear:both; content:"";}
+	.pre-order .price-list li .price-detail .item-list {float:right; max-height:48px;text-align:right;}
+	.pre-order .price-list li .price-detail .item-list .price-select {float:none; margin:0;}
+	.pre-order .price-list li .price-detail .item-list .price-select + .price-select {margin-top:8px;}
+	.pre-order .price-list li .price-detail .btn-more {float:right; clear:both; margin-top:6px;}
+	.pre-order .price-list li .price-detail .btn-delete {max-width:12px; vertical-align:middle;}
+	.pre-order .price-list li .price-detail .btn-delete img {width:100%; margin-bottom:4px;}
+
+	.pre-order .total-box {float:none; margin:0; padding:0; border:none;}
+	.pre-order .total-box .calc {display:block; padding:12px 0; text-align:center; border-top:1px solid #e6e6e6; border-bottom:1px solid #e6e6e6;}
+	.pre-order .total-box .calc a {display:inline-block; padding-right:15px; background-image:url('/images/icon-calc-mo.png'); background-size:12px; font-size:12px; color:#000;}
+	.pre-order .total-box .total-inner {display:block; margin:0; border:none;}
+	.pre-order .total-box .total-inner .price-box {display:block; float:none;}
+	.pre-order .total-box .total-inner .btn-order {display:block; margin:20px auto 0; float:none;}
+	.pre-order .total-box .total-inner .btn-order .btn-default {width:100%; height:40px; line-height:40px;}
+	.pre-order .total-box .price-total {margin:17px 0 26px;}
+	.pre-order .total-box .price-total:after {display:block; clear:both; content:"";}
+	.pre-order .total-box .price-total .title {float:left; margin:10px 0 0 0; font-size:15px;}
+	.pre-order .total-box .price-total .price-cost {float:left; margin-right:10px; padding-top:8px; font-size:16px;}
+	.pre-order .total-box .price-total .price-final {font-size:24px;}
+
+
+	.s-gotop-wrap .s-btn-gotop:after{
+		background: url('/images/btn-arrow-up-white.png');
+		height:9px;
+		width:34px;
+	}
+
+	/* service-wrap */
+	.pre-order .service-wrap {margin-top:40px; padding:0 15px;}
+
+	.pre-order .service-list li {width:100%; padding:0;min-height:78px;}
+
+	.pre-order .service-list li + li {border:none;}
+	.pre-order .service-list li .service-image {max-width:102px; margin:0 auto;}
+	.pre-order .service-list li .service-image img {width:67%;}
+	.question-li {margin-bottom:15px;}
+	.pre-order .service-list li .desc {padding:0 10%; font-size:12px;}
+
+	.pre-order .banner-area {margin-top:37px;}
+	.pre-order .banner-area .ad-info {top:0; left:0; right:0; text-align:center;}
+	.pre-order .banner-area .ad-info .ad-inner,
+	.pre-order .banner-area .ad-info .ad-txt {display:block;}
+	.pre-order .banner-area .ad-info .desc {padding-top:49px; padding-top:6.8055vw; line-height:1.2; font-size:48px; font-size:6.6666vw;}
+	.pre-order .banner-area .ad-info .btn-default {height:80px; height:11.1111vw; line-height:80px; line-height:11.1111vw; padding:0 6.9444vw; margin-top:36px; margin-top:5vw; font-size:24px; font-size:3.333vw;}
+	.pre-order .banner-area .ad-info .btn-default.white {margin-top:38px; margin-top:5.2777vw;}
+
+	/* component-wrap */
+	.pre-order .component-wrap {padding:0 15px;}
+	.pre-order .component-wrap .sub-title {margin-top:48px;}
+	.pre-order .component-cont {margin-top:31px;}
+	.pre-order .component-cont .product-thumb {display:none;}
+	.pre-order .component-cont .product-compose {float:none; width:100%;}
+	.pre-order .component-cont .product-compose li {width:33.3%; margin-bottom:34px;}
+	.pre-order .component-cont .product-compose li:first-child {display:block;}
+	.pre-order .component-cont .product-compose li .comp-image img {max-width:102px;}
+	.pre-order .component-cont .product-name,
+	.pre-order .component-cont .comp-desc {margin-top:3px; font-size:12px; min-height: 35px;}
+
+	/* check-wrap */
+	.pre-order .check-wrap {margin:9px auto 50px; padding:0 15px;}
+	.pre-order .check-wrap .sub-title {margin-top:0;}
+	.pre-order .check-wrap .check-list {margin-top:31px;}
+	.pre-order .check-wrap .check-list ul {width:103.5%; margin-left:-3.5%;}
+	.pre-order .check-wrap .check-list li {width:29.8%; margin:0 0 10px 3.5%; padding:0;}
+	.pre-order .check-wrap .check-list li img {max-width:100px; height:auto;}
+
+	.pre-order .thumb-view .thumb-temp .slick-slide > a,
+	.pre-order .thumb-view .thumb-temp .slick-slide > a img {height:auto}
+
+	/* slick */
+	.pre-order .thumb-view .thumb-temp .slick-list {min-width:302px;}
+	.slick-track {min-width:422px;}
+
+	/*loader gobuy*/
+	.pre-order .total-box .btn-order .btn-default.loader:after {right: 13px; top: 10px;}
+}
+
+@media screen and (max-width:360px) {
+
+	/* kv-wrap */
+	// .pre-order .kv-wrap .pre-inner {padding:25px 15px 32px;}
+	.pre-order .kv-wrap .title-box .product-name {font-size:14px;}
+	.pre-order .kv-wrap .title-box .product-name span + span:after {height:11px; margin-top:-8px;}
+	.pre-order .kv-wrap .title-box .kv-title {font-size:24px;}
+	.pre-order .kv-wrap .title-box .desc {margin-top:4px; line-height:20px; font-size:12px;}
+	.pre-order .kv-wrap .kv-image {margin-top:26px; padding:0;}
+
+	/* product-wrap */
+	.pre-order .product-title .produt-name h2 {font-size:24px;}
+	.pre-order .product-title .produt-name h2 span + span {margin-left:10px; padding:0 11px;}
+	.pre-order .product-title .produt-name h2 span + span:after {height:18px; margin-top:-10px;}
+	.pre-order .product-title .product-desc {margin-top:14px; line-height:18px; font-size:12px;}
+	.pre-order .thumb-view .thumb-temp {max-width:250px;}
+	.pre-order .thumb-view .thumb-temp .slick-list {max-width:250px; min-width:initial;}
+	.pre-order .thumb-view .thumb-temp div.slick-slide {width:40px !important;}
+
+	/* service-wrap */
+	.pre-order .banner-area .ad-info .desc {padding-top:21px; line-height:29px; font-size:24px;}
+	.pre-order .banner-area .ad-info .btn-default {margin-top:18px; font-size:12px;}
+	.pre-order .banner-area.none-shop .ad-info .btn-default {margin-top:18px;}
+
+}
+
+
+.option-select button.disabled{
+  background: url('/images/OutOfStock2.png');
+  background-size: 105% 105%;
+
+}
+
+.option-select.color-chip button.disabled {
+  background: none;
+
+}
+
+.color-chip button.disabled span {
+	background: url('/images/OutOfStock.png');
+	background-size: 100%;
+}
+
+@media screen and (max-width: 768px) {
+	.option-select.color-chip button.disabled span {
+		background-size: 100%;
+	}
+}
+
+
+
+/*PAYER EN 4x*/
+.total-area__frame__block{
+	float:right;
+	clear:both;
+	margin-top:15px;
+}
+.oney-divided{
+	clear:both;
+	font-size:16px;
+	display:block;
+	img{
+		margin-top:11px;
+	}
+}
+
+.oney-4x-price{
+    font-size: 25px;
+    font-family: 'SamsungOne';
+    margin-left: 7px;
+    font-weight: bold;
+    vertical-align: bottom;
+    display: inline-flex;
+}
+
+/*OFFRE DE LOCATION*/
+
+.up2you-total.total-area__frame__block.up2you{
+	display:inline-block;
+	float:none;
+	margin:0;
+	vertical-align:top;
+}
+.up2you-total__price__dtls__dtl__dtl-val {
+	display: block;
+	font-size: 37px;
+	font-weight: bold;
+	line-height: 1;
+	color: #4a4a4a;
+	font-family: 'SamsungOne', sans-serif;
+	font-weight:bold;
+  vertical-align: top;
+}
+
+.up2you-total__price__dtls__dtl__plus{
+
+}
+.up2you-total__price__dtls__dtl__dtl-val__period {
+	font-size: 9.9px
+}
+.up2you-total__price__dtls__dtl__dtl-txt {
+	display: block;
+	font-size: 10px;
+}
+
+
+
+.up2you-total__price__dtls__dtl__dtl-txt2 {
+  display: block;
+  font-size: 9px;
+}
+.up2you-total__price__dtls__dtl__dtl-val__period{
+	text-transform: uppercase;
+	font-size: 12.9px;
+}
+
+.up2you-total__price__dtls__dtl{
+	display:inline-block;
+  vertical-align: top;
+}
+
+.up2you-total__logo24x{
+	margin-top:5px;
+}
+
+/* popup ----------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.pop-wrap{position:absolute;top:0;left:0;z-index:1000;width:100%;height:100%}
+.pop-wrap .mask{display:block;position:absolute;top:0;left:0;z-index:10;width:100%;height:100%;background:url(/images/mask-empty.png) 0 0 repeat; background-color:#000; opacity: 0.5;}
+.pop-choice{display:block;position:absolute;left:50%;z-index:20;width:436px;margin:0 0 0 300px;padding:40px;border:2px solid #d3d3d3;background:#fff}
+.pop-choice .choice-product{margin:0 0 3px}
+.pop-choice .choice-product .tit{display:block;padding:11px 0 4px;font-size:20px;color:#1a1a1a;line-height:1;font-family:'SamsungOne', sans-serif}
+.pop-choice .choice-product .product-name{display:block;position:relative;padding:7px 0;font-size:16px;color:#777;line-height:1;font-family:'SamsungOne', sans-serif; font-weight:bold;}
+.pop-choice .choice-product .product-name span{display:inline;}
+.pop-choice .choice-product .product-name .cancel{position:absolute;top:0;right:0;width:90px;height:24px;font-size:14px;color:#545454;line-height:24px;font-family:'SamsungOne', sans-serif;text-align:center;border:1px solid #dfdfdf;border-radius:2px;background:#f5f5f5;outline:none}
+.pop-choice .choice-product .price{display:block;margin:3px 0 29px;padding:22px 0 0;font-size:20px;color:#1a1a1a;line-height:1;font-family:'SamsungOne', sans-serif;font-weight:bold;border-top:1px solid #d3d3d3}
+.pop-choice .choice-product .price.type2{margin:14px 0 38px}
+.pop-choice .choice-total{position:relative;border-top:1px solid #d3d3d3}
+.pop-choice .choice-total .total-section{padding:41px 0 0;}
+.pop-choice .choice-total .total-section .txt{display:block;width:100%;margin:0 0 10px;font-size:20px;color:#1a1a1a;line-height:1;font-family:'SamsungOne', sans-serif}
+.pop-choice .choice-total .total-section .total-price{display:block;margin:0;font-size:30px;color:#1a1a1a;line-height:1;font-family:'SamsungOne', sans-serif}
+.pop-choice .choice-total .util{position:absolute;bottom:17px;right:0}
+.pop-choice .choice-total .util li{float:left;width:auto;margin:0 0 0 2px;border:none; display:none;}
+.pop-choice .choice-total .util li button{overflow:hidden;width:auto;height:26px;text-align:center;border:1px solid #dfdfdf;border-radius:2px;background:#f5f5f5;outline:none}
+.pop-choice .choice-total .util li.calcurator{width:auto}
+.pop-choice .choice-total .util li.calcurator button{width:28px;text-indent:-9999px;background:#f5f5f5 url(/images/btn-util-calc.png) 50% 50% no-repeat}
+.pop-choice .choice-total .util li.reset button{width:100px;font-size:14px;color:#000;line-height:28px;font-family:'SamsungOne', sans-serif}
+.pop-choice .close{overflow:hidden;position:absolute;top:14px;right:14px;width:20px;height:18px;text-indent:-9999px;outline:none;background:url(/images/choice-close.png) 0 0 no-repeat}
+.pop-choice.active .pop-choice{display:block}
+
+.pop-wrap.sns {position:fixed;}
+.pop-wrap.sns .mask{display:block;background:url(/images/mask-dimm-type2.png) 0 0 repeat}
+.pop-wrap.sns .close{overflow:hidden;position:fixed;top:20px;right:20px;z-index:30;width:18px;height:18px;text-indent:-9999px;color:#fff;outline:none;background:url(/images/pop-sns-close.png) 0 0 no-repeat;-webkit-transition:all .6s;-moz-transition:all .6s;-o-transition:all .6s;-ms-transition:all .6s;transition:all .6s}
+.pop-wrap.sns .close:hover{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-o-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}
+.sns-list{position:fixed;top:50%;left:50%;z-index:20;min-width:1px;margin:-72px 0 0 -320px}
+.sns-list:after{content:"";display:block;clear:both}
+.sns-list li{float:left;margin:0 20px;-webkit-transition:all .8s;-moz-transition:all .8s;-o-transition:all .8s;-ms-transition:all .8s;transition:all .8s}
+.sns-list li a{float:left;width:120px;}
+.sns-list li a .img{position:relative;z-index:10;float:left;width:120px;height:120px;margin:0 5px}
+.sns-list li a .img img{display:block;position:absolute;top:0;left:0;z-index:10;-webkit-transition:all .3s;-moz-transition:all .3s;-o-transition:all .3s;-ms-transition:all .3s;transition:all .3s}
+.sns-list li a .img img.on{z-index:20;opacity:0}
+.sns-list li a .txt{float:left;width:100%;text-align:center;text-transform:uppercase;font-size:18px;color:#888;line-height:24px;font-family:'SamsungOne', sans-serif;;-webkit-transition:all .3s;-moz-transition:all .3s;-o-transition:all .3s;-ms-transition:all .3s;transition:all .3s}
+.sns-list li a:hover .img img.on{opacity:1;filter:alpha(opacity=100)}
+.sns-list li a:hover .txt{color:#fff}
+.sns-list li a:hover img.off{opacity:0;filter:alpha(opacity=0)}
+.sns-list li.sns-1{-webkit-transform:translate3d(0, 50px, 0);-moz-transform:translate3d(0, 50px, 0);-o-transform:translate3d(0, 50px, 0);-ms-transform:translate3d(0, 50px, 0);transform:translate3d(0, 50px, 0)}
+.sns-list li.sns-2{-webkit-transform:translate3d(0, 70px, 0);-moz-transform:translate3d(0, 70px, 0);-o-transform:translate3d(0, 70px, 0);-ms-transform:translate3d(0, 70px, 0);transform:translate3d(0, 70px, 0)}
+.sns-list li.sns-3{-webkit-transform:translate3d(0, 90px, 0);-moz-transform:translate3d(0, 90px, 0);-o-transform:translate3d(0, 90px, 0);-ms-transform:translate3d(0, 90px, 0);transform:translate3d(0, 90px, 0)}
+.sns-list li.sns-4{-webkit-transform:translate3d(0, 110px, 0);-moz-transform:translate3d(0, 110px, 0);-o-transform:translate3d(0, 110px, 0);-ms-transform:translate3d(0, 110px, 0);transform:translate3d(0, 110px, 0)}
+.sns-list.active li{-webkit-transform:translate3d(0, 0, 0);-moz-transform:translate3d(0, 0, 0);-o-transform:translate3d(0, 0, 0);-ms-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0)}
+
+@media screen and (max-width:1640px){
+	.pop-choice{left:initial;right:40px;margin:0}
+}
+
+@media screen and (max-width:720px){
+	// .pop-wrap.choice .mask{display:block;background:url(/images/mask-dimm-type3.png) 0 0 repeat}
+	.pop-wrap.sns .close{top:20px;right:20px;width:16px;height:16px;background:url(/images/pop-sns-close-m.png) 0 0 no-repeat;background-size:16px 16px}
+	.pop-choice{width:auto;left:0;right:0;padding:20px;border:1px solid #fefefe;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-o-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;}
+	.pop-choice .choice-product .tit{font-size:18px}
+	.pop-choice .choice-product .product-name{font-size:15px}
+	.pop-choice .choice-product .product-name .cancel{right:-100px}
+	.pop-choice .choice-product .price{font-size:18px}
+	.pop-choice .choice-total .total-section .txt{font-size:18px}
+	.pop-choice .choice-total .total-section .total-price{font-size:25px}
+	.pop-choice .choice-total .util li{margin:0 0 0 10px}
+	.pop-choice .choice-total .util li button{height:25px}
+	.pop-choice .choice-total .util li.calcurator button{width:25px}
+	.pop-choice .choice-total .util li.reset button{width:100px;font-size:13px}
+	.pop-choice .close{width:16px;height:16px;background:url(/images/choice-close-m.png) 0 0 no-repeat;background-size:16px 16px}
+
+	.sns-list{position:fixed;top:50%;left:inherit;z-index:20;width:100%;min-width:inherit;margin:-244px 0 0 0}
+	.sns-list li{width:100%;margin:0;padding:20px 0}
+	.sns-list li a{display:block;float:none;width:100%;margin:0 auto;text-align:center}
+	.sns-list li a .img{display:block;float:none;width:60px;height:60px;margin:0 auto}
+	.sns-list li a .img img{width:60px}
+	.sns-list li a .txt{font-size:15px;line-height:22px}
+}
+
+.pre-order .product-wrap .btn-accessories-area{margin-top:25px;}
+.pre-order .product-wrap .btn-accessories-area button {/*width:48.2%;*/ height:40px; padding:0 12px; line-height:40px; text-align:left; border:1px solid #d2d2d2; box-sizing:border-box; border-radius:3px; font-size:12px; font-family:'SamsungOne';font-weight:400;}
+
+.pop-choice.up2you span{
+	display:block;
+	font-family: "SamsungOne",sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+}
+.pop-choice.up2you .legal{
+	font-size: 9px;
+	font-family: "SamsungOne",sans-serif;
+	font-weight:bold;
+	margin: 10px 0 17px 0;
+}
+
+.pop-choice.up2you .info-simulateur{
+	font-size: 14px;
+	text-transform: none;
+}
+.pop-choice.up2you .more{
+	padding: 15px;
+	font-size: 14px;
+	background-color: #f1f1f1;
+	text-transform: uppercase;
+	border: 1px solid #b2b2b2;
+	font-family: 'SamsungOne';
+	display:block;
+	margin: 25px auto 0;
+	line-height: 9px;
+	width: 122px;
+	color: #000;
+	text-align: center;
+}
+
+.bdr-right{
+	border-right: 1px solid #d4d4d4;
+}
+
+.bdr-top{
+	border-top: 1px solid #d4d4d4;
+}
+
+.bg-grey{
+	background-color: #f1f1f1;
+	font-size : 15px;
+}
+
+.pop-choice.up2you .cell-padding{
+	padding: 20px;
+	font-family: 'SamsungOne';
+	color:#000;
+}
+
+.pop-choice.up2you .cell-padding .priceS, .pop-choice.up2you .cell-padding .first-payment-price{
+	display:inline;
+	font-family: 'SamsungOne';
+	font-size: 26px;
+}
+
+
+.pop-choice.up2you .product-name{
+	text-align: center;
+	font-family: 'SamsungOne';
+	font-size: 37px;
+	text-transform: none;
+	color:#000;
+}
+
+.simulateur-up2you{padding: 20px 0;}
+
+
+.other-shops-button{
+	font-size: 15px;
+	font-family:'SamsungOne';
+	display:inline-block;
+	margin-top: 10px;
+	width: 51%;
+	.product-details__cta-text{
+		text-transform: uppercase;
+		vertical-align:top;
+		margin-right: 44px;
+	}
+	.s-ico-location{
+		display:inline-block;
+		width:19px;
+		height:19px;
+		background-image:url(/images/svg-pd-location.svg);background-repeat:no-repeat;
+	}
+	&:hover{
+		cursor:pointer;
+	}
+}
+
+/* Dot com Footer */
+    .m_dotcom_footer {background-color:#f2f2f2;border-top:1px solid #dadee2;}
+    .m_dotcom_footer > article {max-width:1200px;margin:0 auto;position:relative;left:0;top:0;padding:25px 40px;}
+    .m_dotcom_footer > article .footer-right {position:absolute;right:30px;top:25px;}
+.rtl  .m_dotcom_footer > article .footer-right {left:30px;right:auto;}
+    .m_dotcom_footer > article .footer-right a {font-family:'RobotoR';font-size:13px;line-height:27px;text-align:center;border-style:solid;overflow:hidden;display:inline-block;width:26px;height:26px;margin-right:10px;border-width:2px;}
+.rtl  .m_dotcom_footer > article .footer-right a {margin-right:0;margin-left:10px;}
+    .m_dotcom_footer > article .footer-right a.color-type1 {color:#fff01f;background-color:#000;border-color:#fff01f;}
+    .m_dotcom_footer > article .footer-right a.color-type2 {color:#666;background-color:#fff;border-color:#bdbdbd;}
+    .m_dotcom_footer > article .footer-left {width:80%;font-size: 14px; font-family:'SamsungOne'; color:#727272;}
+    .m_dotcom_footer > article .footer-left p {font-family:'RobotoR';color:#666;font-size:13px;line-height:20px;min-height:29px;}
+  .s2 .m_dotcom_footer > article {padding-left:20px;}
+.rtl.s2 .m_dotcom_footer > article {padding-left:0;padding-right:20px;}
+  .s1 .m_dotcom_footer > article {padding:25px 15px;}
+  .s1 .m_dotcom_footer > article .footer-right {position:relative;left:0;top:0;right:auto;padding:0 0 15px 0;}
+  .s1 .m_dotcom_footer > article .footer-right {left:auto;right:0;}
+  .s1 .m_dotcom_footer > article .footer-right a {margin-right:5px;}
+.rtl.s1 .m_dotcom_footer > article .footer-right a {margin-right:0;margin-left:5px;}
+  .s1 .m_dotcom_footer > article .footer-left {width:100%;}
+html.color_yb .m_dotcom_footer,
+html.color_yb .m_dotcom_footer > article .footer-left p {background-color:#000 !important;color:#fff01f !important;}
+.dotcom .m_dotcom_footer,
+.dotcom footer,
+.dotcom #footer {position:relative;}
+
+
+
+.kithandsoff {
+	display: block;
+	float: left;
+	padding-right: 20px;
+}
+.kithandsoff img {
+	height: 100px;
+	width: 100px;
+}
+
+

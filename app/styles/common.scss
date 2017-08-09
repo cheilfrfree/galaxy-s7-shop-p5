@@ -1,0 +1,21 @@
+/*이중 스크롤 문제*/
+/* html{overflow-y: scroll} */
+body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ol,ul,li,p,pre,select,th,td,input,legend,textarea,fieldset,form,button{margin:0;padding:0}
+/*GNB 파란색 언더바*/
+body{font-size:20px;color:#000;-webkit-text-size-adjust:none}
+header, main, section, article, aside, footer, nav{display:block}
+a{color:#1428a0;text-decoration:none;border:none}
+fieldset,img{border:none}
+li{list-style:none}
+address,em{font-style:normal}
+button,input,select,textarea{vertical-align:middle}
+button{overflow:visible;vertical-align:middle;cursor:pointer;border:none;background:transparent}
+button::-moz-focus-inner{padding:0; border:0;}
+button:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+label{cursor:pointer}
+input[type=text]{-webkit-appearance:none;border-radius:0}
+table{width:100%;border-collapse:collapse;border-spacing:0;empty-cells:show}
+
+.blind{overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px}
