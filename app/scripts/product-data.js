@@ -1,58 +1,8 @@
-/* PRE ORDER */
-var CHOICE_PRODUCT = [];
-var TOTAL_PRICE = 0; // Store total price for calculator
+//gold: #CAAF80
+//pink: #FFC6F4
+//blue: #87B1FD
+//silver:#D8D8D8
 
-
-var IS_GLOBAL = true;
-var checkCookieAPI = '';
-// var checkCookieAPI_ACC = '';
-var PID = '';
-// var ACC_PID = '';
-
-if (SITE_CD === 'fr') {
-    IS_GLOBAL = true;
-    API_DOMAIN = 'http://store.samsung.com/';
-}
-
-var modelIdx = '';
-var colorIdx = '';
-var memoryIdx = '';
-var colorClearViewIdx = 0;
-var packIdx = '';
-var _modellHtml = '';
-var _colorHtml = '';
-var _colorHtmlS8 = '';
-var _colorHtmlS8plus = '';
-var _memoryHtml = '';
-var _packHtml = '';
-// var _accColorHtml = '';
-// var _accPriceHtml = '';
-var _accListHtml = '';
-var productPrice = 0;
-var promotionPrice = 0;
-// var accessoryPrice = 0;
-var optionSelect1 = $('.option-select[data-opt-index=0]');
-var optionSelect2 = $('.option-select[data-opt-index=1]');
-var optionSelect3 = $('.option-select[data-opt-index=2], .option-txt[data-opt-index=2]');
-var optionSelect4 = $('.option-select[data-opt-index=3]');
-var optionSelect5 = $('.option-select[data-opt-index=4]');
-var acc_idx = '';
-var acc_name = '';
-var btnName = '';
-var defModelName = '';
-var defColorName = '';
-var defMemoryName = '';
-var video = document.getElementById('product-video');
-var currentNumber = 0;
-var accCheck = true;
-var PIDLENGTH;
-var countAcc = 0;
-var clearViewSKU;
-var API_DOMAIN = 'https://shop.samsung.com/';
-
-
-/* PRODUCT DATA */
-/* PRODUCT DATA rupture : R323NBKAXEF - en stock : G950FZVAXEF*/
 //gold: #CAAF80
 //pink: #FFC6F4
 //blue: #87B1FD
@@ -292,107 +242,176 @@ var ACCESSORY_DATA = [
       'modelAcc': 's7-acc',
       'shortString' : false,
       'src': 'http://www.samsung.com/fr/mobile-accessories/clear-view-cover-zg930-galaxy-s7/EF-ZG930CBEGWW/'
-    }/*,
-    {
-      'item': 'Coque transparente',
-      'pid': ['EF-QG930CFEGWW', 'EF-QG930CSEGWW'],
-      'price': [29.90, 29.90],
-      'color': ['gold', 'silver'],
-      'views': 4
     },
-    {
-      'item': 'Chargeur à induction',
-      'pid': ['EP-NG930BBEGWW', 'EP-NG930BWEGWW'],
+      {
+      'item': 'Coque transparente',
+      'modelCode': ['EF-QG930CFEGWW', 'EF-QG930CSEGWW'],
+      'price': [29.90, 29.90],
+      'color': ['gold', 'silver' ],
+      'colorCode': ['#CAAF80', '#D8D8D8'],
+      'views': 4,
+      'active': true,
+      'modelAcc': 's7-acc',
+      'shortString' : false,
+      'src': 'http://www.samsung.com/fr/mobile-accessories/clear-cover-qg930-galaxy-s7/EF-QG930CSEGWW/'
+    },
+      {
+      'item':  'Chargeur à induction',
+      'modelCode': ['EP-NG930BBEGWW', 'EP-NG930BWEGWW'],
       'price': [59.90, 59.90],
       'color': ['black', 'white'],
-      'views': 4
+      'colorCode': ['black', 'white'],
+      'views': 4,
+      'active': false,
+      'modelAcc': 's7-acc',
+      'shortString' : false,
+      'src': 'http://www.samsung.com/fr/mobile-accessories/wireless-charger-ng930-galaxy-s7-s7-edge/EP-NG930BBEGWW/'
     },
-    {
-      'item': 'Etui à rabat',
-      'pid': ['EF-WG930PBEGWW', 'EF-WG930PFEGWW', 'EF-WG930PXEGWW'],
+      {
+      'item':  'Etui à rabat',
+      'modelCode': ['EF-WG930PBEGWW', 'EF-WG930PFEGWW', 'EF-WG930PXEGWW'],
       'price': [39.90, 39.90, 39.90],
-      'color': ['black', 'gold', 'red'],
-      'views': 4
+      'color': ['black', 'gold', 'ruby wine'],
+      'colorCode': ['black', '#CAAF80', '#653038'],
+      'views': 4,
+      'active': true,
+      'modelAcc': 's7-acc',
+      'shortString' : false,
+      'src': 'http://www.samsung.com/fr/mobile-accessories/flip-wallet-wg930-galaxy-s7/EF-WG930PBEGWW/'
     },
-    {
-      'item': 'Etui clavier',
-      'pid': ['EJ-CG930UBEGFR'],
+      {
+      'item':  'Etui clavier',
+      'modelCode': ['EJ-CG930UBEGFR'],
       'price': [89.90],
       'color': ['black'],
-      'views': 5
+      'colorCode': ['black'],
+      'views': 5,
+      'active': false,
+      'modelAcc': 's7-acc',
+      'shortString' : false,
+      'src': 'http://www.samsung.com/fr/mobile-accessories/bluetooth-keyboard-cover-cg930-galaxy-s7/'
     },
-    {
+      {
       'item': 'Coque cuir',
-      'pid': ['EF-VG930LBEGWW'],
+      'modelCode': ['EF-VG930LBEGWW'],
       'price': [49.90],
       'color': ['black'],
-      'views': 3
+      'colorCode': ['black'],
+      'views': 3,
+      'active': false,
+      'modelAcc': 's7-acc',
+      'shortString' : false,
+      'src': 'http://www.samsung.com/fr/mobile-accessories/leather-cover-vg930-galaxy-s7/'
     },
-    {
+      {
       'item': 'Coque batterie',
-      'pid': ['EP-TG930BBEGWW'],
+      'modelCode': ['EP-TG930BBEGWW'],
       'price': [99.90],
       'color': ['black'],
-      'views': 4
+      'colorCode': ['black'],
+      'views': 4,
+      'active': false,
+      'modelAcc': 's7-acc',
+      'shortString' : false,
+      'src': 'http://www.samsung.com/fr/mobile-accessories/backpack-tg930-galaxy-s7/'
     },
-    // { 'item': 'Batterie externe 5100mAh charge rapide', 'pid' : ['EB-PG930BBEGWW','EB-PG930BSEGWW'], 'price': [59.90,59.90], 'color': ['black', 'silver'], 'views': 4 },
-    {
+      {
       'item': 'Batterie ext. 5100mAh charge rapide',
-      'pid': ['EB-PG930BSEGWW', 'PG930BSEGWW'],
+      'modelCode': ['EB-PG930BSEGWW', 'PG930BSEGWW'],
       'price': [59.90, 59.90],
       'color': ['silver', 'black'],
-      'views': 4
+      'colorCode': ['#D8D8D8', 'black'],
+      'views': 4,
+      'active': true,
+      'modelAcc': 's7-acc',
+      'shortString' : false,
+      'src': 'http://www.samsung.com/fr/mobile-accessories/5100mah-external-battery-pack-eb-pg930/EB-PG930BBEGWW/'
     },
-    {
+      {
       'item': 'Batterie ext. 10200mA charge rapide',
-      'pid': ['EB-PG935BBEGWW', 'EB-PG935BSEGWW'],
+      'modelCode': ['EB-PG935BBEGWW', 'EB-PG935BSEGWW'],
       'price': [79.90, 79.90],
       'color': ['black', 'silver'],
-      'views': 4
+      'colorCode': ['black', '#D8D8D8'],
+      'views': 4,
+      'active': true,
+      'modelAcc': 's7-acc',
+      'shortString' : false,
+      'src': 'http://www.samsung.com/fr/mobile-accessories/10200mah-external-battery-pack-eb-pg935/EB-PG935BBEGWW/'
     },
-    {
+      {
       'item': 'Lens Cover',
-      'pid': ['ET-CG930DBEGWW'],
+      'modelCode':['ET-CG930DBEGWW'],
       'price': [99.90],
       'color': ['black'],
-      'views': 4
+      'colorCode': ['black'],
+      'views': 4,
+      'active': true,
+      'modelAcc': 's7-acc',
+      'shortString' : false,
+      'src': 'http://www.samsung.com/fr/mobile-accessories/lens-cover-galaxy-s7/'
     },
-    {
+      {
       'item': 'Gear VR',
-      'pid': ['SM-R323NBKAXEF'],
+      'modelCode':['SM-R323NBKAXEF'],
       'price': [89.00],
       'color': ['black'],
-      'views': 1
+      'colorCode': ['black'],
+      'views': 1,
+      'active': true,
+      'modelAcc': 's7-acc',
+      'shortString' : false,
+      'src': 'http://www.samsung.com/fr/wearables/gear-vr-r323/'
     },
-    {
+      {
       'item': 'Gear Fit2 taille S',
-      'pid': ['SM-R3600DANXEF', 'SM-R3600ZBNXEF', 'SM-R3600ZINXEF'],
+      'modelCode':['SM-R3600DANXEF', 'SM-R3600ZBNXEF', 'SM-R3600ZINXEF'],
       'price': [199.00, 199.00, 199.00],
       'color': ['black', 'blue', 'pink'],
-      'views': 4
+      'colorCode': ['black', '#0F5EB9', '#FFC6F4'],
+      'views': 4,
+      'active': true,
+      'modelAcc': 's7-acc',
+      'shortString' : false,
+      'src': 'http://www.samsung.com/fr/wearables/gear-fit-2-r360-small/SM-R3600DANXEF/'
     },
-    {
+      {
       'item': 'Gear Fit2 taille L',
-      'pid': ['SM-R3600DAAXEF', 'SM-R3600ZBAXEF', 'SM-R3600ZIAXEF'],
+      'modelCode':['SM-R3600DAAXEF', 'SM-R3600ZBAXEF', 'SM-R3600ZIAXEF'],
       'price': [199.00, 199.00, 199.00],
       'color': ['black', 'blue', 'pink'],
-      'views': 4
+      'colorCode': ['black', '#0F5EB9', '#FFC6F4'],
+      'views': 4,
+      'active': true,
+      'modelAcc': 's7-acc',
+      'shortString' : false,
+      'src': 'http://www.samsung.com/fr/wearables/gear-fit-2-r360-large/SM-R3600DAAXEF/'
     },
-    {
+      {
       'item': 'Gear 360',
-      'pid': ['SM-C200NZWAXEF'],
+      'modelCode':['SM-C200NZWAXEF'],
       'price': [249.00],
       'color': ['white'],
-      'views': 5
+      'colorCode': ['white'],
+      'views': 5,
+      'active': true,
+      'modelAcc': 's7-acc',
+      'shortString' : false,
+      'src': 'http://www.samsung.com/fr/wearables/gear-360-c200/'
     },
-    {
+      {
       'item': 'Coffret essentiel',
-      'pid': ['ET-KG930BSEGWW'],
+      'modelCode': ['ET-KG930BSEGWW'],
       'price': [59.90],
       'color': ['silver'],
-      'views': 1
-    }*/
-  ],
+      'colorCode': ['#D8D8D8'],
+      'views': 1,
+      'active': true,
+      'modelAcc': 's7-acc',
+      'shortString' : false,
+      'src': 'http://www.samsung.com/fr/mobile-accessories/essential-accessory-pack-galaxy-s7-kg930/'
+    }
+  ],//S7 EDGE ACCESSORIES LIST
   [
     {
       'item': 'Etui Led View S7 edge',
@@ -417,148 +436,190 @@ var ACCESSORY_DATA = [
       'modelAcc': 's7edge-acc',
       'shortString' : false,
       'src': 'http://www.samsung.com/fr/mobile-accessories/s-view-cover-cg935-galaxy-s7-edge/EF-CG935PBEGWW/'
+    },
+    {
+      "item": "Etui Clear View",
+      "modelCode": ["EF-ZG935CBEGWW","EF-ZG935CSEGWW","EF-ZG935CFEGWW","EF-ZGEGWW","EF-ZGW"],
+      "color": ["black","silver","gold","blue","pink"],
+      "colorCode": ["black","#D8D8D8","#CAAF80","#87B1FD","#FFC6F4"],
+      "price": [69.9,69.9,69.9,69.9,69.9],
+      "views": 4,
+      "active": true,
+      "modelAcc": "s7edge-acc",
+      "shortString": false,
+      "src": "http://www.samsung.com/fr/mobile-accessories/clear-view-cover-zg935-galaxy-s7-edge/EF-ZG935CBEGWW/"
+    },
+    {
+      "item": "Coque transparente",
+      "modelCode": ["EF-QG935CFEGWW","EF-QG935CSEGWW"],
+      "color": ["gold","silver"],
+      "colorCode": ["#CAAF80","#D8D8D8"],
+      "price": [29.9,29.9],
+      "views": 4,
+      "active": true,
+      "modelAcc": "s7edge-acc",
+      "shortString": false,
+      "src": "http://www.samsung.com/fr/mobile-accessories/clear-cover-qg935-galaxy-s7-edge/EF-QG935CFEGWW/"
+    },
+    {
+      "item": "Chargeur à induction",
+      "modelCode": ["EP-NG930BBEGWW","EP-NG930BWEGWW"],
+      "color": ["black","white"],
+      "colorCode": ["black","white"],
+      "price": [59.9,59.9],
+      "views": 4,
+      "active": false,
+      "modelAcc": "s7edge-acc",
+      "shortString": false,
+      "src": "http://www.samsung.com/fr/mobile-accessories/wireless-charger-ng930-galaxy-s7-s7-edge/EP-NG930BBEGWW/"
+    },
+    {
+      "item": "Etui à rabat",
+      "modelCode": ["EF-WG935PBEGWW","EF-WG935PFEGWW","EF-WG935PXEGWW"],
+      "color": ["black","gold","red"],
+      "colorCode": ["black","#CAAF80","red"],
+      "price": [39.9,39.9,39.9],
+      "views": 4,
+      "active": true,
+      "modelAcc": "s7edge-acc",
+      "shortString": false,
+      "src": "http://www.samsung.com/fr/mobile-accessories/flip-wallet-wg935-galaxy-s7-edge/EF-WG935PBEGWW/"
+    },
+    {
+      "item": "Etui clavier",
+      "modelCode": ["EJ-CG935UBEGFR"],
+      "color": ["black"],
+      "colorCode": ["black"],
+      "price": [89.9],
+      "views": 5,
+      "active": false,
+      "modelAcc": "s7edge-acc",
+      "shortString": false,
+      "src": "http://www.samsung.com/fr/search/?searchvalue=EJ-CG935UBEGFR"
+    },
+    {
+      "item": "Coque cuir",
+      "modelCode": ["EF-VG935LBEGWW"],
+      "color": ["black"],
+      "colorCode": ["black"],
+      "price": [49.9],
+      "views": 3,
+      "active": false,
+      "modelAcc": "s7edge-acc",
+      "shortString": false,
+      "src": "http://www.samsung.com/fr/mobile-accessories/leather-cover-vg935-galaxy-s7-edge/EF-VG935LBEGWW/"
+    },
+    {
+      "item": "Coque batterie",
+      "modelCode": ["EP-TG935BBEGWW"],
+      "color": ["black"],
+      "colorCode": ["black"],
+      "price": [99.9],
+      "views": 4,
+      "active": false,
+      "modelAcc": "s7edge-acc",
+      "shortString": false,
+      "src": "http://www.samsung.com/fr/mobile-accessories/backpack-tg935-galaxy-s7-edge/"
+    },
+    {
+      "item": "Batterie ext. 5100mAh charge rapide",
+      "modelCode": ["EB-PG930BSEGWW","EB-PG930BSEGWW"],
+      "color": ["silver","black"],
+      "colorCode": ["#D8D8D8","black"],
+      "price": [59.9,59.9],
+      "views": 4,
+      "active": true,
+      "modelAcc": "s7edge-acc",
+      "shortString": false,
+      "src": "http://www.samsung.com/fr/mobile-accessories/5100mah-external-battery-pack-eb-pg930/EB-PG930BBEGWW/"
+    },
+    {
+      "item": "Batterie ext. 10200mA charge rapide",
+      "modelCode": ["EB-PG935BBEGWW","EB-PG935BSEGWW"],
+      "color": ["black","silver"],
+      "colorCode": ["black","#D8D8D8"],
+      "price": [79.9,79.9],
+      "views": 4,
+      "active": true,
+      "modelAcc": "s7edge-acc",
+      "shortString": false,
+      "src": "http://www.samsung.com/fr/mobile-accessories/10200mah-external-battery-pack-eb-pg935/EB-PG935BBEGWW/"
+    },
+    {
+      "item": "Lens Cover",
+      "modelCode": ["ET-CG935DBEGWW"],
+      "color": ["black"],
+      "colorCode": ["black"],
+      "price": [99.9],
+      "views": 4,
+      "active": true,
+      "modelAcc": "s7edge-acc",
+      "shortString": false,
+      "src": "http://www.samsung.com/fr/mobile-accessories/lens-cover-galaxy-s7-edge/"
+    },
+    {
+      "item": "Gear VR",
+      "modelCode": ["SM-R323NBKAXEF"],
+      "color": ["black"],
+      "colorCode": ["black"],
+      "price": [89.0],
+      "views": 1,
+      "active": true,
+      "modelAcc": "s7edge-acc",
+      "shortString": false,
+      "src": "http://www.samsung.com/fr/wearables/gear-vr-r323/"
+    },
+    {
+      "item": "Gear Fit2 taille S",
+      "modelCode": ["SM-R3600DANXEF","SM-R3600ZBNXEF","SM-R3600ZINXEF"],
+      "color": ["black","blue","pink"],
+      "colorCode": ["black","#87B1FD","#FFC6F4"],
+      "price": [199.0,199.0,199.0],
+      "views": 4,
+      "active": true,
+      "modelAcc": "s7edge-acc",
+      "shortString": false,
+      "src": "http://www.samsung.com/fr/wearables/gear-fit-2-r360-small/SM-R3600DANXEF/"
+    },
+    {
+      "item": "Gear Fit2 taille L",
+      "modelCode": ["SM-R3600DAAXEF","SM-R3600ZBAXEF","SM-R3600ZIAXEF"],
+      "color": ["black","blue","pink"],
+      "colorCode": ["black","#87B1FD","#FFC6F4"],
+      "price": [199.0,199.0,199.0],
+      "views": 4,
+      "active": true,
+      "modelAcc": "s7edge-acc",
+      "shortString": false,
+      "src": "http://www.samsung.com/fr/wearables/gear-fit-2-r360-large/SM-R3600DAAXEF/"
+    },
+    {
+      "item": "Gear 360",
+      "modelCode": ["SM-C200NZWAXEF"],
+      "color": ["white"],
+      "colorCode": ["white"],
+      "price": [249.0],
+      "views": 5,
+      "active": true,
+      "modelAcc": "s7edge-acc",
+      "shortString": false,
+      "src": "http://www.samsung.com/fr/wearables/gear-360-c200/"
+    },
+    {
+      "item": "Coffret essentiel",
+      "modelCode": ["ET-KG930BSEGWW"],
+      "color": ["silver"],
+      "colorCode": ["#D8D8D8"],
+      "price": [59.9],
+      "views": 1,
+      "active": true,
+      "modelAcc": "s7edge-acc",
+      "shortString": false,
+      "src": "http://www.samsung.com/fr/mobile-accessories/essential-accessory-pack-galaxy-s7-edge-kg935/"
     }
-    /*{
-      'item': 'Etui Clear View',
-      'pid': ['EF-ZG935CBEGWW', 'EF-ZG935CSEGWW', 'EF-ZG935CFEGWW', 'EF-ZG935CLEGWW', 'EF-ZG935CZEGWW'],
-      'price': [69.90, 69.90, 69.90, 69.90, 69.90],
-      'color': ['black', 'silver', 'gold', 'blue', 'pink'],
-      'views': 4
-    },
-    {
-      'item': 'Coque transparente',
-      'pid': ['EF-QG935CFEGWW', 'EF-QG935CSEGWW'],
-      'price': [29.90, 29.90],
-      'color': ['gold', 'silver'],
-      'views': 4
-    },
-    {
-      'item': 'Chargeur à induction',
-      'pid': ['EP-NG930BBEGWW', 'EP-NG930BWEGWW'],
-      'price': [59.90, 59.90],
-      'color': ['black', 'white'],
-      'views': 4
-    },
-    {
-      'item': 'Etui à rabat',
-      'pid': ['EF-WG935PBEGWW', 'EF-WG935PFEGWW', 'EF-WG935PXEGWW'],
-      'price': [39.90, 39.90, 39.90],
-      'color': ['black', 'gold', 'red'],
-      'views': 4
-    },
-    {
-      'item': 'Etui clavier',
-      'pid': ['EJ-CG935UBEGFR'],
-      'price': [89.90],
-      'color': ['black'],
-      'views': 5
-    },
-    {
-      'item': 'Coque cuir',
-      'pid': ['EF-VG935LBEGWW'],
-      'price': [49.90],
-      'color': ['black'],
-      'views': 3
-    },
-    {
-      'item': 'Coque batterie',
-      'pid': ['EP-TG935BBEGWW'],
-      'price': [99.90],
-      'color': ['black'],
-      'views': 4
-    },
-    // { 'item': 'Batterie externe 5100mAh charge rapide', 'pid' : ['EB-PG930BBEGWW','EB-PG930BSEGWW'], 'price': [59.90,59.90], 'color': ['black', 'silver'], 'views': 4 },
-    {
-      'item': 'Batterie ext. 5100mAh charge rapide',
-      'pid': ['EB-PG930BSEGWW', 'EB-PG930BSEGWW'],
-      'price': [59.90, 59.90],
-      'color': ['silver', 'black'],
-      'views': 4
-    },
-    {
-      'item': 'Batterie ext. 10200mA charge rapide',
-      'pid': ['EB-PG935BBEGWW', 'EB-PG935BSEGWW'],
-      'price': [79.90, 79.90],
-      'color': ['black', 'silver'],
-      'views': 4
-    },
-    {
-      'item': 'Lens Cover',
-      'pid': ['ET-CG935DBEGWW'],
-      'price': [99.90],
-      'color': ['black'],
-      'views': 4
-    },
-    {
-      'item': 'Gear VR',
-      'pid': ['SM-R323NBKAXEF'],
-      'price': [89.00],
-      'color': ['black'],
-      'views': 1
-    },
-    {
-      'item': 'Gear Fit2 taille S',
-      'pid': ['SM-R3600DANXEF', 'SM-R3600ZBNXEF', 'SM-R3600ZINXEF'],
-      'price': [199.00, 199.00, 199.00],
-      'color': ['black', 'blue', 'pink'],
-      'views': 4
-    },
-    {
-      'item': 'Gear Fit2 taille L',
-      'pid': ['SM-R3600DAAXEF', 'SM-R3600ZBAXEF', 'SM-R3600ZIAXEF'],
-      'price': [199.00, 199.00, 199.00],
-      'color': ['black', 'blue', 'pink'],
-      'views': 4
-    },
-    {
-      'item': 'Gear 360',
-      'pid': ['SM-C200NZWAXEF'],
-      'price': [249.00],
-      'color': ['white'],
-      'views': 5
-    },
-    {
-      'item': 'Coffret essentiel',
-      'pid': ['ET-KG930BSEGWW'],
-      'price': [59.90],
-      'color': ['silver'],
-      'views': 1
-    }*/
   ]
 ];
 
-/*var ACCESSORY_DATA = [
-    [
-        { 'item': 'Etui Led View', 'pid' : ['EF-NG930PBEGWW', 'EF-NG930PSEGWW', 'EF-NG930PFEGWW'],'price': [79.90,79.90,79.90], 'color': ['black', 'silver', 'gold'], 'views': 4 },
-        { 'item': 'Etui S View', 'pid' : ['EF-CG930PBEGWW','EF-CG930PWEGWW', 'EF-CG930PSEGWW', 'EF-CG930PFEGWW'],'price': [59.90,59.90,59.90,59.90], 'color': ['black', 'white', 'silver', 'gold'], 'views': 4 },
-        { 'item': 'Etui Clear View', 'pid' : ['EF-ZG930CBEGWW','EF-ZG930CSEGWW', 'EF-ZG930CFEGWW'], 'price': [69.90,69.90,69.90], 'color': ['black', 'silver', 'gold'], 'views': 4 },
-        { 'item': 'Coque Transparente', 'pid' : ['EF-QG930CSEGWW','EF-QG930CFEGWW'], 'price': [29.90,29.90], 'color': ['silver', 'gold'], 'views': 4 },
-        //{ 'item': 'Chargeur à induction', 'pid' : ['EP-NG930BBEGWW'], 'price': [59.90], 'color': ['black'], 'views': 5 },
-        { 'item': 'Etui à rabat', 'pid' : ['EF-WG930PBEGWW','EF-WG930PFEGWW'], 'price': [39.90,39.90], 'color': ['black', 'gold'], 'views': 4 },
-        { 'item': 'Etui Clavier', 'pid' : ['EJ-CG930UBEGFR'], 'price': [89.90], 'color': ['black'], 'views': 5 },
-        { 'item': 'Coque cuir', 'pid' : ['EF-VG930LBEGWW'], 'price': [49.90], 'color': ['black'], 'views': 3 },
-        { 'item': 'Coque batterie', 'pid' : ['EP-TG930BBEGWW'], 'price': [99.90], 'color': ['black'], 'views': 4 },
-        // { 'item': 'Batterie externe 5100mAh charge rapide', 'pid' : ['EB-PG930BBEGWW','EB-PG930BSEGWW'], 'price': [59.90,59.90], 'color': ['black', 'silver'], 'views': 4 },
-        { 'item': 'Batterie externe 5100mAh charge rapide', 'pid' : ['EB-PG930BSEGWW'], 'price': [59.90], 'color': ['silver'], 'views': 4 },
-        { 'item': 'Batterie externe 10200mA charge rapide', 'pid' : ['EB-PG935BBEGWW','EB-PG935BSEGWW'], 'price': [79.90,79.90], 'color': ['black', 'silver'], 'views': 4 },
-        { 'item': 'Chargeur à induction', 'pid' : ['EP-NG930BWEGWW', 'EP-NG930BBEGWW'], 'price': [59.90, 59.90], 'color': ['white', 'black'], 'views': 5 }
-    ],
-    [
-        { 'item': 'Etui Led View', 'pid' : ['EF-NG935PBEGWW', 'EF-NG935PSEGWW', 'EF-NG935PFEGWW'],'price': [79.90,79.90,79.90], 'color': ['black', 'silver', 'gold'], 'views': 4 },
-        { 'item': 'Etui S View', 'pid' : ['EF-CG935PBEGWW','EF-CG935PWEGWW', 'EF-CG935PSEGWW', 'EF-CG935PFEGWW'],'price': [59.90,59.90,59.90,59.90], 'color': ['black', 'white', 'silver', 'gold'], 'views': 4 },
-        { 'item': 'Etui Clear View', 'pid' : ['EF-ZG935CBEGWW','EF-ZG935CSEGWW', 'EF-ZG935CFEGWW'], 'price': [69.90,69.90,69.90], 'color': ['black', 'silver', 'gold'], 'views': 4 },
-        { 'item': 'Coque Transparente', 'pid' : ['EF-QG935CSEGWW','EF-QG935CFEGWW'], 'price': [29.90,29.90], 'color': ['silver', 'gold'], 'views': 4 },
-        //{ 'item': 'Chargeur à induction', 'pid' : ['EP-NG930BBEGWW'], 'price': [59.90], 'color': ['black'], 'views': 5 },
-        { 'item': 'Etui à rabat', 'pid' : ['EF-WG935PBEGWW','EF-WG935PFEGWW'], 'price': [39.90,39.90], 'color': ['black', 'gold'], 'views': 4 },
-        { 'item': 'Etui Clavier', 'pid' : ['EJ-CG935UBEGFR'], 'price': [89.90], 'color': ['black'], 'views': 5 },
-        { 'item': 'Coque cuir', 'pid' : ['EF-VG935LBEGWW'], 'price': [49.90], 'color': ['black'], 'views': 3 },
-        { 'item': 'Coque batterie', 'pid' : ['EP-TG935BBEGWW'], 'price': [99.90], 'color': ['black'], 'views': 4 },
-        // { 'item': 'Batterie externe 5100mAh charge rapide', 'pid' : ['EB-PG930BBEGWW','EB-PG930BSEGWW'], 'price': [59.90,59.90], 'color': ['black', 'silver'], 'views': 4 },
-        { 'item': 'Batterie externe 5100mAh charge rapide', 'pid' : ['EB-PG930BSEGWW'], 'price': [59.90], 'color': ['silver'], 'views': 4 },
-        { 'item': 'Batterie externe 10200mA charge rapide', 'pid' : ['EB-PG935BBEGWW','EB-PG935BSEGWW'], 'price': [79.90,79.90], 'color': ['black', 'silver'], 'views': 4 },
-        { 'item': 'Chargeur à induction', 'pid' : ['EP-NG930BWEGWW', 'EP-NG930BBEGWW'], 'price': [59.90, 59.90], 'color': ['white', 'black'], 'views': 5 }
-    ]
-];*/
 
 var PREORDERMSG = {
   NO_ONLINE_RETAILERS: 'There are no online retailers available at current.',
