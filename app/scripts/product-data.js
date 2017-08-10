@@ -7,6 +7,7 @@
 //pink: #FFC6F4
 //blue: #87B1FD
 //silver:#D8D8D8
+//red: #56233B
 
 var CURRENCY_CHARACTER = '€';
 var SITE_CD = 'fr';
@@ -49,35 +50,6 @@ var CLEARVIEW_COLOR = [
     {'name':'orchidée', 'hexa':'#61516b'}
 ];
 
-var BUNDLES = [{
-    'item': 'Pad à induction STAND',
-    'pid': ['EP-NG930BBEGWW','EP-NG930BBEGWW'],
-    'price': [59.90,59.90],
-    'color': ['noir','noir'],
-    'views': 1
-  },
-  {
-    'item': 'Etui Clear View',
-    'pid': ['EF-ZG930CBEGWW', 'EF-ZG935CBEGWW'],
-    'price': [69.90, 69.90],
-    'color': ['noir', 'noir'],
-    'views': 2
-  },
-  {
-    'item': 'Ecouteurs Level Active',
-    'pid': ['EO-BG930CBEGWW','EO-BG930CBEGWW'],
-    'price': [79.90,79.90],
-    'color': ['',''],
-    'views': 1
-  },
-  {
-    'item': 'Aucun pack',
-    'pid': ['',''],
-    'price': [0,0],
-    'color': ['',''],
-    'views': 1
-  }
-];
 var PRICE_INFO = [
     [ // model choice
         [ // memory choice
@@ -223,7 +195,7 @@ var ACCESSORY_DATA = [
       'item': 'Etui S View',
       'modelCode': ['EF-CG930PBEGWW', 'EF-CG930PWEGWW', 'EF-CG930PSEGWW', 'EF-CG930PFEGWW', 'EF-CG930PXEGWW'],
       'color': ['black', 'white', 'silver', 'gold', 'red'],
-      'colorCode': ['black', 'white', '#D8D8D8', '#CAAF80', 'red'],
+      'colorCode': ['black', 'white', '#D8D8D8', '#CAAF80', '#56233B'],
       'price': [59.90, 59.90, 59.90, 59.90, 59.90],
       'views': 4,
       'active': true,
@@ -429,7 +401,7 @@ var ACCESSORY_DATA = [
       'item': 'Etui S View',
       'modelCode': ['EF-CG935PBEGWW', 'EF-CG935PWEGWW', 'EF-CG935PSEGWW', 'EF-CG935PFEGWW', 'EF-CG935PLEGWW', 'EF-CG935PXEGWW'],
       'color': ['black', 'white', 'silver', 'gold', 'red'],
-      'colorCode': ['black', 'white', '#D8D8D8', '#CAAF80', 'red'],
+      'colorCode': ['black', 'white', '#D8D8D8', '#CAAF80', '#56233B'],
       'price': [59.90, 59.90, 59.90, 59.90, 59.90],
       'views': 4,
       'active': true,
@@ -477,7 +449,7 @@ var ACCESSORY_DATA = [
       "item": "Etui à rabat",
       "modelCode": ["EF-WG935PBEGWW","EF-WG935PFEGWW","EF-WG935PXEGWW"],
       "color": ["black","gold","red"],
-      "colorCode": ["black","#CAAF80","red"],
+      "colorCode": ["black","#CAAF80","#56233B"],
       "price": [39.9,39.9,39.9],
       "views": 4,
       "active": true,
@@ -619,21 +591,6 @@ var ACCESSORY_DATA = [
     }
   ]
 ];
-
-
-var PREORDERMSG = {
-  NO_ONLINE_RETAILERS: 'There are no online retailers available at current.',
-  WHERE_TO_BUY: 'WHERE TO BUY',
-  SELECT_MODEL_FIRST: 'Select Model FIRST........!!!',
-  SELECT_COLOR_FIRST: 'Select Color FIRST........!!!',
-  SELECT_MODEL_AND_ORDER: 'Select Model and order........!!!',
-  SELECT_COLOR_AND_ORDER: 'Select Color and order........!!!',
-  SELECT_CARRIER_AND_ORDER: 'Select Carrier and order........!!!',
-  IN_STOCK: 'IN STOCK',
-  OUT_OF_STOCK: 'OUT OF STOCK',
-  PREV: 'Prev',
-  NEXT: 'Next'
-};
 
 var UP2YOU_PRICE = [{
     'first': 49,

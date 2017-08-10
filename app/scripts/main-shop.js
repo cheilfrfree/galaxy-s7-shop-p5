@@ -14064,7 +14064,6 @@ var _gsScope = "undefined" != typeof module && module.exports && "undefined" != 
     };
 
 });
-
 //gold: #CAAF80
 //pink: #FFC6F4
 //blue: #87B1FD
@@ -14074,6 +14073,7 @@ var _gsScope = "undefined" != typeof module && module.exports && "undefined" != 
 //pink: #FFC6F4
 //blue: #87B1FD
 //silver:#D8D8D8
+//red: #56233B
 
 var CURRENCY_CHARACTER = '€';
 var SITE_CD = 'fr';
@@ -14089,10 +14089,10 @@ var PRODUCT_DATA = {
   'sku2':[['SM-G930FZKAXEF', 'SM-G930FZWAXEF', 'SM-G930FZDAXEF', 'SM-G930FEDAXEF', 'SM-G930FZBAXEF', 'SM-G930FZSAXEF'], ['SM-G935FZKAXEF','SM-G935FZWAXEF','SM-G935FZDAXEF', 'SM-G935FEDAXEF','SM-G935FZBAXEF']],
   'pack': [
             [
-              // ['Pad à induction STAND','EP-NG930BBEGWW','phrase super décrivant le pack pad'],
-              // ['Ecouteurs Level Active','EO-BG930CBEGWW','phrase super décrivant le pack ecouteurs'],
-              // ['Aucun Pack', '', ''],
-              // ['Clear View','EF-ZG930CBEGWW','phrase super décrivant le pack etui']
+             /* ['Pad à induction STAND','EP-NG930BBEGWW','phrase super décrivant le pack pad'],
+              ['Ecouteurs Level Active','EO-BG930CBEGWW','phrase super décrivant le pack ecouteurs'],
+              ['Aucun Pack', '', ''],
+              ['Clear View','EF-ZG930CBEGWW','phrase super décrivant le pack etui']*/
             ],[
           /*    ['Pad à induction STAND','EP-NG930BBEGWW','phrase super décrivant le pack pad'],
               ['Ecouteurs Level Active','EO-BG930CBEGWW','phrase super décrivant le pack ecouteurs'],
@@ -14116,6 +14116,35 @@ var CLEARVIEW_COLOR = [
     {'name':'orchidée', 'hexa':'#61516b'}
 ];
 
+var BUNDLES = [{
+    'item': 'Pad à induction STAND',
+    'pid': ['EP-NG930BBEGWW','EP-NG930BBEGWW'],
+    'price': [59.90,59.90],
+    'color': ['noir','noir'],
+    'views': 1
+  },
+  {
+    'item': 'Etui Clear View',
+    'pid': ['EF-ZG930CBEGWW', 'EF-ZG935CBEGWW'],
+    'price': [69.90, 69.90],
+    'color': ['noir', 'noir'],
+    'views': 2
+  },
+  {
+    'item': 'Ecouteurs Level Active',
+    'pid': ['EO-BG930CBEGWW','EO-BG930CBEGWW'],
+    'price': [79.90,79.90],
+    'color': ['',''],
+    'views': 1
+  },
+  {
+    'item': 'Aucun pack',
+    'pid': ['',''],
+    'price': [0,0],
+    'color': ['',''],
+    'views': 1
+  }
+];
 var PRICE_INFO = [
     [ // model choice
         [ // memory choice
@@ -14261,7 +14290,7 @@ var ACCESSORY_DATA = [
       'item': 'Etui S View',
       'modelCode': ['EF-CG930PBEGWW', 'EF-CG930PWEGWW', 'EF-CG930PSEGWW', 'EF-CG930PFEGWW', 'EF-CG930PXEGWW'],
       'color': ['black', 'white', 'silver', 'gold', 'red'],
-      'colorCode': ['black', 'white', '#D8D8D8', '#CAAF80', 'red'],
+      'colorCode': ['black', 'white', '#D8D8D8', '#CAAF80', '#56233B'],
       'price': [59.90, 59.90, 59.90, 59.90, 59.90],
       'views': 4,
       'active': true,
@@ -14467,7 +14496,7 @@ var ACCESSORY_DATA = [
       'item': 'Etui S View',
       'modelCode': ['EF-CG935PBEGWW', 'EF-CG935PWEGWW', 'EF-CG935PSEGWW', 'EF-CG935PFEGWW', 'EF-CG935PLEGWW', 'EF-CG935PXEGWW'],
       'color': ['black', 'white', 'silver', 'gold', 'red'],
-      'colorCode': ['black', 'white', '#D8D8D8', '#CAAF80', 'red'],
+      'colorCode': ['black', 'white', '#D8D8D8', '#CAAF80', '#56233B'],
       'price': [59.90, 59.90, 59.90, 59.90, 59.90],
       'views': 4,
       'active': true,
@@ -14515,7 +14544,7 @@ var ACCESSORY_DATA = [
       "item": "Etui à rabat",
       "modelCode": ["EF-WG935PBEGWW","EF-WG935PFEGWW","EF-WG935PXEGWW"],
       "color": ["black","gold","red"],
-      "colorCode": ["black","#CAAF80","red"],
+      "colorCode": ["black","#CAAF80","#56233B"],
       "price": [39.9,39.9,39.9],
       "views": 4,
       "active": true,
@@ -14658,7 +14687,6 @@ var ACCESSORY_DATA = [
   ]
 ];
 
-
 var UP2YOU_PRICE = [{
     'first': 49,
     'monthly': 20
@@ -14679,6 +14707,7 @@ var UP2YOU_PRICE_POPIN = [{
     'brokenPlus': 34
   }
 ];
+
 
 function numberFormat(num) {
     num = num.toString();
@@ -18697,11 +18726,7 @@ var clearViewSKU;
 
                 var _acchtml = '';
                 if ($(this).is('.active')) {
-                    if ($(this).hasClass('s8-acc')) {
-                        _acchtml = "<span class='price-select' data-acc-num=" + thisAccIdx + ">" + acc_name + "<a href='#' class='btn-delete' data-omni-type='microsite_scRemove' data-omni=';" + modelName + "|" + modelCode + "'><img src='/images/btn-delete.png' data-img-pc='/images/btn-delete.png' data-img-mo='/images/btn-delete-mo.png'alt='delete'></a></span>";
-                    } else {
-                        _acchtml = "<span class='price-select' data-acc-num=" + thisAccIdx + ">" + acc_name + "<a href='#' class='btn-delete' data-omni-type='microsite_scRemove' data-omni=';" + modelName + "|" + modelCode + "'><img src='/images/btn-delete.png' data-img-pc='/images/btn-delete.png' data-img-mo='/images/btn-delete-mo.png'alt='delete'></a></span>";
-                    }
+                     _acchtml = "<span class='price-select' data-acc-num=" + thisAccIdx + ">" + acc_name + "<a href='#' class='btn-delete' data-omni-type='microsite_scRemove' data-omni=';" + modelName + "|" + modelCode + "'><img src='/images/btn-delete.png' data-img-pc='/images/btn-delete.png' data-img-mo='/images/btn-delete-mo.png'alt='delete'></a></span>";
                     $(this).attr('title', 'selected option');
                     $('.item-list').prepend(_acchtml);
                 } else {
