@@ -14089,10 +14089,10 @@ var PRODUCT_DATA = {
   'sku2':[['SM-G930FZKAXEF', 'SM-G930FZWAXEF', 'SM-G930FZDAXEF', 'SM-G930FEDAXEF', 'SM-G930FZBAXEF', 'SM-G930FZSAXEF'], ['SM-G935FZKAXEF','SM-G935FZWAXEF','SM-G935FZDAXEF', 'SM-G935FEDAXEF','SM-G935FZBAXEF']],
   'pack': [
             [
-             /* ['Pad à induction STAND','EP-NG930BBEGWW','phrase super décrivant le pack pad'],
+              ['Pad à induction STAND','EP-NG930BBEGWW','phrase super décrivant le pack pad'],
               ['Ecouteurs Level Active','EO-BG930CBEGWW','phrase super décrivant le pack ecouteurs'],
               ['Aucun Pack', '', ''],
-              ['Clear View','EF-ZG930CBEGWW','phrase super décrivant le pack etui']*/
+              ['Clear View','EF-ZG930CBEGWW','phrase super décrivant le pack etui']
             ],[
           /*    ['Pad à induction STAND','EP-NG930BBEGWW','phrase super décrivant le pack pad'],
               ['Ecouteurs Level Active','EO-BG930CBEGWW','phrase super décrivant le pack ecouteurs'],
