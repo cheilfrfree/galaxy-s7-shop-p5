@@ -14116,35 +14116,6 @@ var CLEARVIEW_COLOR = [
     {'name':'orchidée', 'hexa':'#61516b'}
 ];
 
-var BUNDLES = [{
-    'item': 'Pad à induction STAND',
-    'pid': ['EP-NG930BBEGWW','EP-NG930BBEGWW'],
-    'price': [59.90,59.90],
-    'color': ['noir','noir'],
-    'views': 1
-  },
-  {
-    'item': 'Etui Clear View',
-    'pid': ['EF-ZG930CBEGWW', 'EF-ZG935CBEGWW'],
-    'price': [69.90, 69.90],
-    'color': ['noir', 'noir'],
-    'views': 2
-  },
-  {
-    'item': 'Ecouteurs Level Active',
-    'pid': ['EO-BG930CBEGWW','EO-BG930CBEGWW'],
-    'price': [79.90,79.90],
-    'color': ['',''],
-    'views': 1
-  },
-  {
-    'item': 'Aucun pack',
-    'pid': ['',''],
-    'price': [0,0],
-    'color': ['',''],
-    'views': 1
-  }
-];
 var PRICE_INFO = [
     [ // model choice
         [ // memory choice
@@ -14687,20 +14658,6 @@ var ACCESSORY_DATA = [
   ]
 ];
 
-
-var PREORDERMSG = {
-  NO_ONLINE_RETAILERS: 'There are no online retailers available at current.',
-  WHERE_TO_BUY: 'WHERE TO BUY',
-  SELECT_MODEL_FIRST: 'Select Model FIRST........!!!',
-  SELECT_COLOR_FIRST: 'Select Color FIRST........!!!',
-  SELECT_MODEL_AND_ORDER: 'Select Model and order........!!!',
-  SELECT_COLOR_AND_ORDER: 'Select Color and order........!!!',
-  SELECT_CARRIER_AND_ORDER: 'Select Carrier and order........!!!',
-  IN_STOCK: 'IN STOCK',
-  OUT_OF_STOCK: 'OUT OF STOCK',
-  PREV: 'Prev',
-  NEXT: 'Next'
-};
 
 var UP2YOU_PRICE = [{
     'first': 49,
@@ -18246,10 +18203,11 @@ var clearViewSKU;
             }
            
             //MODELE BUTTONS
+            
             for (var m = 0, PIDLENGTH = PRODUCT_DATA.model.length; m < PIDLENGTH; m++) {
-                _modellHtml += "<button data-model-idx='" + m + "' title='" + PRODUCT_DATA.model[m] + "'data-omni-type='microsite_pdpoption' data-omni='option selector:model " + PRODUCT_DATA.model[m] + "'>" + PRODUCT_DATA.model[m] + "</button>";
+                _modellHtml += "<button data-model-idx='" + m + "' title='" + PRODUCT_DATA.model[m]  + "'data-omni-type='microsite_pdpoption' data-omni='option selector:model " + PRODUCT_DATA.model[m] + "'>" + PRODUCT_DATA.model[m] + "</button>";
             }
-
+            if (PRODUCT_DATA.model.length === 1) {$('.option-select[data-opt-index=0]').parent().parent().css('display','none');}
             // COLOR BUTTONS
             for (var c = 0, PIDLENGTH = PRODUCT_DATA.color[0].length; c < PIDLENGTH; c++) {
                 _colorHtml += "<button style='opacity:0.5;' title='" + PRODUCT_DATA.color[0][c] + "' data-omni-type='microsite_pdpoption'  data-sku='" + PRODUCT_DATA.sku[c] + "' data-omni='option selector:color' data-color-idx=" + c + "><span style='background-color:" + PRODUCT_DATA.colorCode[0][c] + "'>" + PRODUCT_DATA.color[0][c] + "</span></button>";
@@ -19644,9 +19602,17 @@ var clearViewSKU;
         $('.itmo').toggle();
     });
 
-   
+    // les plus fixed panel after scrolling
+    $(document).ready(function() {
+        $('#scrollDiv').hide();
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 85) {
+                $('#lesplus-panel').css('position','fixed');
+            }
+            else {
+                 $('#lesplus-panel').css('position','absolute');
+            }
+        });
+    });
 
-
-
-   
 })(window.jQuery);
