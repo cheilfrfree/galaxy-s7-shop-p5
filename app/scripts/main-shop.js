@@ -14079,7 +14079,7 @@ var CURRENCY_CHARACTER = '€';
 var SITE_CD = 'fr';
 var IS_DOLLAR = false;
 var PRODUCT_DATA = {
-  'model': ['Galaxy S7', 'S7 edge'],
+  'model': ['Galaxy S7', 'S7 Edge'],
   'rental': ['true', 'true', 'false'],
   'memory': [['32Go'], ['32Go'], ['32Go']],
   'color': [['Noir', 'Blanc', 'Or', 'Rose', 'Bleu', 'Argent'],  [ 'Noir', 'Blanc', 'Or', 'Rose', 'Bleu' ]],
@@ -14206,7 +14206,7 @@ var PRICE_INFO = [
             [ // color choice
                 {
                     // Galaxy S7 Edge Noir 32Go
-                    'model': 'Galaxy S7 Edge',
+                    'model': 'Galaxy S7 edge',
                     'modelCode': 'SM-G935FZKAXEF',
                     'price': '699.00',
                     'memory': '32Go',
@@ -14214,16 +14214,16 @@ var PRICE_INFO = [
                 }
             ],
             [{
-                // Galaxy S7 Edge Blanc 32Go
-                'model': 'Galaxy S7 Edge',
+                // Galaxy S7 edge Blanc 32Go
+                'model': 'Galaxy S7 edge',
                 'modelCode': 'SM-G935FZWAXEF',
                 'price': '699.00',
                 'memory': '32Go',
                 'color': 'Blanc'
             }],
             [{
-                // Galaxy S7 Edge Or 32Go
-                'model': 'Galaxy S7 Edge',
+                // Galaxy S7 edge Or 32Go
+                'model': 'Galaxy S7 edge',
                 'modelCode': 'SM-G935FZDAXEF',
                 'price': '699.00',
                 'memory': '32Go',
@@ -14688,12 +14688,12 @@ var ACCESSORY_DATA = [
 ];
 
 var UP2YOU_PRICE = [{
-    'first': 49,
+    'first': 99,
     'monthly': 20
   },
   {
-    'first': 49,
-    'monthly': 25
+    'first': 99,
+    'monthly': 24
   }
 ];
 var UP2YOU_PRICE_POPIN = [{
@@ -14702,9 +14702,9 @@ var UP2YOU_PRICE_POPIN = [{
     'brokenPlus': 29
   },
   {
-    'noInsurance': 25,
-    'broken': 32,
-    'brokenPlus': 34
+    'noInsurance': 24,
+    'broken': 30,
+    'brokenPlus': 33
   }
 ];
 
@@ -19567,7 +19567,9 @@ var clearViewSKU;
                 var target = $('.pop-wrap .pop-choice');
                 var pop_h = target.height();
                 target.css({
-                    'top': (choice_position.top - pop_h - 50) + 'px'
+                    'position': 'fixed',
+                    'margin': 'auto',
+                    'top': 150 + 'px'
                 });
                 if (target.offset().top < $(window).scrollTop()) {
                     target.css({
@@ -19638,6 +19640,7 @@ var clearViewSKU;
                  $('#lesplus-panel').css('position','absolute');
             }
         });
+        
     });
 
 })(window.jQuery);
