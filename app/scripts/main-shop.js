@@ -14082,11 +14082,11 @@ var PRODUCT_DATA = {
   'model': ['Galaxy S7', 'S7 Edge'],
   'rental': ['true', 'true', 'false'],
   'memory': [['32Go'], ['32Go'], ['32Go']],
-  'color': [['Noir', 'Blanc', 'Or', 'Rose', 'Bleu', 'Argent'],  [ 'Noir', 'Blanc', 'Or', 'Rose', 'Bleu' ]],
-  'colorCode': [['#000', 'white', '#CAAF80', '#FFC6F4', '#87B1FD','#D8D8D8'], ['#000', 'white', '#CAAF80', '#FFC6F4', '#87B1FD']],
+  'color': [['Noir', 'Blanc', 'Or', 'Rose', 'Argent'],  [ 'Noir', 'Blanc', 'Or', 'Rose', 'Bleu', 'Argent' ]],
+  'colorCode': [['#000', 'white', '#CAAF80', '#FFC6F4','#D8D8D8'], ['#000', 'white', '#CAAF80', '#FFC6F4', '#87B1FD','#D8D8D8']],
   //Sku S7 - S7 edge - depends on color
-  'sku': ['SM-G930FZKAXEF', 'SM-G930FZWAXEF', 'SM-G930FZDAXEF', 'SM-G930FEDAXEF', 'SM-G930FZBAXEF', 'SM-G930FZSAXEF',/* */'SM-G935FZKAXEF','SM-G935FZWAXEF','SM-G935FZDAXEF','SM-G935FEDAXEF', 'SM-G935FZBAXEF'],
-  'sku2':[['SM-G930FZKAXEF', 'SM-G930FZWAXEF', 'SM-G930FZDAXEF', 'SM-G930FEDAXEF', 'SM-G930FZBAXEF', 'SM-G930FZSAXEF'], ['SM-G935FZKAXEF','SM-G935FZWAXEF','SM-G935FZDAXEF', 'SM-G935FEDAXEF','SM-G935FZBAXEF']],
+  'sku': ['SM-G930FZKAXEF', 'SM-G930FZWAXEF', 'SM-G930FZDAXEF', 'SM-G930FEDAXEF', 'SM-G930FZSAXEF',/* */'SM-G935FZKAXEF','SM-G935FZWAXEF','SM-G935FZDAXEF','SM-G935FEDAXEF', 'SM-G935FZBAXEF','SM-G935FZSAXEF'],
+  'sku2':[['SM-G930FZKAXEF', 'SM-G930FZWAXEF', 'SM-G930FZDAXEF', 'SM-G930FEDAXEF', 'SM-G930FZSAXEF'], ['SM-G935FZKAXEF','SM-G935FZWAXEF','SM-G935FZDAXEF', 'SM-G935FEDAXEF','SM-G935FZBAXEF','SM-G935FZSAXEF']],
   'pack': [
             [
              /* ['Pad à induction STAND','EP-NG930BBEGWW','phrase super décrivant le pack pad'],
@@ -14182,14 +14182,14 @@ var PRICE_INFO = [
                 'memory': '32Go',
                 'color': 'Rose'
             }],
-            [{
+            /*[{
                 // Galaxy S7 Bleu 32Go
                 'model': 'Galaxy S7',
                 'modelCode': 'SM-G930FZBAXEF',
                 'price': '599.00',
                 'memory': '32Go',
                 'color': 'Bleu'
-            }],
+            }],*/
             [{
                 // Galaxy S7 Argent 32Go
                 'model': 'Galaxy S7',
@@ -14244,15 +14244,15 @@ var PRICE_INFO = [
                 'price': '699.00',
                 'memory': '32Go',
                 'color': 'Bleu'
-            }]/*,
+            }],
             [{
                 // Galaxy S7 Edge Argent 32Go
                 'model': 'Galaxy S7 Edge',
-                'modelCode': 'SM-G930FZSAXEF',
+                'modelCode': 'SM-G935FZSAXEF',
                 'price': '699.00',
                 'memory': '32Go',
                 'color': 'Argent'
-            }]*/
+            }]
         ]
     ],
     /*[ // model choice
